@@ -128,6 +128,5 @@ public class LearnJava {
         PrintTest.main(null);
         QualifiedMyClass.main(null);
         SingleImport.main(null);
-
     }
 }
