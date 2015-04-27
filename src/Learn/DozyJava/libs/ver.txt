@@ -1,0 +1,4 @@
+javassist
+javassist-3.18.0-GA
+http://sourceforge.net/projects/jboss/files/Javassist/
+
