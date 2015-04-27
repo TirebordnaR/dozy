@@ -1,5 +1,5 @@
 //: object/Documentation3.java
-package com.dozy.learn.A1Object;
+package com.dozy.learn.object;
 
 /**
  * You can <em>even</em> insert a list:

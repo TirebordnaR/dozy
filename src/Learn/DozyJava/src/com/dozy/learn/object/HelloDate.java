@@ -1,5 +1,5 @@
 //: object/HelloDate.java
-package com.dozy.learn.A1Object;
+package com.dozy.learn.object;
 
 import java.util.*;
 

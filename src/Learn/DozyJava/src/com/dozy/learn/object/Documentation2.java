@@ -1,5 +1,5 @@
 //: object/Documentation2.java
-package com.dozy.learn.A1Object;
+package com.dozy.learn.object;
 
 /**
  * <pre>

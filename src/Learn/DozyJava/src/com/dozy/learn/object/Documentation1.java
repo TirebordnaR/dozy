@@ -1,5 +1,5 @@
 //: object/Documentation1.java
-package com.dozy.learn.A1Object;
+package com.dozy.learn.object;
 
 /** A class comment */
 public class Documentation1 {

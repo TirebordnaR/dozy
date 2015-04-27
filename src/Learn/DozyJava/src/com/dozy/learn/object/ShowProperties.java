@@ -1,5 +1,5 @@
 //: object/ShowProperties.java
-package com.dozy.learn.A1Object;
+package com.dozy.learn.object;
 
 public class ShowProperties {
     public static void dozy_main(String[] args) {
