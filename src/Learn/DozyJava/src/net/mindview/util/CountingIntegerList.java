@@ -2,8 +2,17 @@
 // List of any length, containing sample data.
 package net.mindview.util;
 import java.util.*;
+import java.util.function.Consumer;
+import java.util.function.Predicate;
+import java.util.function.UnaryOperator;
+import java.util.stream.Stream;
 
 public class CountingIntegerList extends AbstractList<Integer> {
+    @Override
+    public Spliterator<Integer> spliterator() {
+        return null;
+    }
+
     private int size;
 
     public CountingIntegerList(int size) {

@@ -3,6 +3,8 @@
 package net.mindview.util;
 
 import java.util.*;
+import java.util.Map.Entry;
+
 import static net.mindview.util.Print.*;
 
 public class Countries {
@@ -231,6 +233,11 @@ public class Countries {
 
         // Use AbstractSet by implementing size() & iterator()
         static class EntrySet extends AbstractSet<Map.Entry<String, String>> {
+            @Override
+            public Spliterator<Map.Entry<String, String>> spliterator() {
+                return null;
+            }
+
             private int size;
 
             EntrySet(int size) {
