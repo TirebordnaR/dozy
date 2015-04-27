@@ -5,6 +5,7 @@ import com.dozy.learn.operators.*;
 import com.dozy.learn.control.*;
 import com.dozy.learn.initialization.*;
 import com.dozy.learn.access.*;
+import com.dozy.learn.reusing.*;
 
 public class LearnJava {
 
@@ -14,7 +15,7 @@ public class LearnJava {
     public static void main(String[] args) {
         System.out.println("Hey java, you're good. 才怪咧！");
 
-        int i = 5;
+        int i = 6;
         switch (i) {
         case 1:
             dozyObject();
@@ -30,6 +31,9 @@ public class LearnJava {
             break;
         case 5:
             dozyAccess();
+            break;
+        case 6:
+            dozyReusing();
             break;
         default:
             break;
@@ -128,5 +132,27 @@ public class LearnJava {
         PrintTest.main(null);
         QualifiedMyClass.main(null);
         SingleImport.main(null);
+    }
+    
+    private static void dozyReusing() {
+        Bath.main(null);
+        Beetle.main(null);
+        BlankFinal.main(null);
+        CADSystem.main(null);
+        Car.main(null);
+        Cartoon.main(null);
+        Chess.main(null);
+        Detergent.main(null);
+        FinalArguments.main(null);
+        FinalData.main(null);
+        FinalOverridingIllusion.main(null);
+        Hide.main(null);
+        Jurassic.main(null);
+        Orc.main(null);
+        PlaceSetting.main(null);
+        SpaceShip.main(null);
+        SpaceShipDelegation.main(null);
+        SprinklerSystem.main(null);
+        Wind.main(null);
     }
 }
