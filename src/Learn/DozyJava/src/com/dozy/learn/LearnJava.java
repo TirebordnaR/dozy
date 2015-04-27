@@ -26,6 +26,8 @@ import com.dozy.learn.typeinfo.toys.*;
 import com.dozy.learn.generics.*;
 import com.dozy.learn.generics.coffee.CoffeeGenerator;
 import com.dozy.learn.generics.decorator.Decoration;
+import com.dozy.learn.arrays.*;
+import com.dozy.learn.containers.*;
 
 public class LearnJava {
 
@@ -35,7 +37,7 @@ public class LearnJava {
     public static void main(String[] args) {
         System.out.println("Hey java, you're good. 才怪咧！");
 
-        int i = 14;
+        int i = 16;
         switch (i) {
         case 1:
             dozyObject();
@@ -78,6 +80,12 @@ public class LearnJava {
             break;
         case 14:
             dozyGenerics();
+            break;
+        case 15:
+            dozyArray();
+            break;
+        case 16:
+            dozyContainers();
             break;
         default:
             break;
@@ -170,7 +178,7 @@ public class LearnJava {
         ChocolateChip2.main(null);
         Dinner.main(null);
         FullQualification.main(null);
-        IceCream.main(null);
+        com.dozy.learn.access.IceCream.main(null);
         ImportedMyClass.main(null);
         LibTest.main(null);
         PrintTest.main(null);
@@ -464,5 +472,73 @@ public class LearnJava {
         Wildcards.main(null);
         CoffeeGenerator.main(null);
         Decoration.main(null);
+    }
+    
+    private static void dozyArray() {
+        AlphabeticSearch.main(null);
+        ArrayOfGenerics.main(null);
+        ArrayOptions.main(null);
+        ArraySearching.main(null);
+        AssemblingMultidimensionalArrays.main(null);
+        AutoboxingArrays.main(null);
+        ComparatorTest.main(null);
+        ComparingArrays.main(null);
+        CompType.main(null);
+        ContainerComparison.main(null);
+        CopyingArrays.main(null);
+        FillingArrays.main(null);
+        GeneratorsTest.main(null);
+        com.dozy.learn.arrays.IceCream.main(null);
+        MultidimensionalObjectArrays.main(null);
+        MultidimensionalPrimitiveArray.main(null);
+        MultiDimWrapperArray.main(null);
+        ParameterizedArrayType.main(null);
+        PrimitiveConversionDemonstration.main(null);
+        RaggedArray.main(null);
+        RandomGeneratorsTest.main(null);
+        Reverse.main(null);
+        StringSorting.main(null);
+        TestArrayGeneration.main(null);
+        TestGenerated.main(null);
+        ThreeDWithNew.main(null);
+    }
+    
+    private static void dozyContainers() {
+        AssociativeArray.main(null);
+        Bits.main(null);
+        //CanonicalMapping.main(null);
+        CollectionDataGeneration.main(null);
+        CollectionDataTest.main(null);
+        CollectionMethods.main(null);
+        CountedString.main(null);
+        DequeTest.main(null);
+        Enumerations.main(null);
+        FailFast.main(null);
+        FillingLists.main(null);
+        IndividualTest.main(null);
+        LinkedHashMapDemo.main(null);
+        //ListPerformance.main(null);
+        Lists.main(null);
+        ListSortSearch.main(null);
+        MapDataTest.main(null);
+        //MapPerformance.main(null);
+        Maps.main(null);
+        QueueBehavior.main(null);
+        ReadOnly.main(null);
+        //References.main(null);
+        //SetPerformance.main(null);
+        SimpleHashMap.main(null);
+        SlowMap.main(null);
+        SortedMapDemo.main(null);
+        SortedSetDemo.main(null);
+        //SpringDetector.main(null);
+        //SpringDetector2.main(null);
+        Stacks.main(null);
+        StringHashCode.main(null);
+        Synchronization.main(null);
+        ToDoList.main(null);
+        TypesForSets.main(null);
+        Unsupported.main(null);
+        Utilities.main(null);
     }
 }
