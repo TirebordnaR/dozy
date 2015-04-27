@@ -6,26 +6,26 @@ import java.io.*;
 import java.util.*;
 
 public class TextFile extends ArrayList<String> {
-  // Read a file as a single string:
-  public static String read(String fileName) {
-    StringBuilder sb = new StringBuilder();
-    try {
-      BufferedReader in= new BufferedReader(new FileReader(
-        new File(fileName).getAbsoluteFile()));
-      try {
-        String s;
-        while((s = in.readLine()) != null) {
-          sb.append(s);
-          sb.append("\n");
+    // Read a file as a single string:
+    public static String read(String fileName) {
+        StringBuilder sb = new StringBuilder();
+        try {
+            BufferedReader in = new BufferedReader(new FileReader(new File(
+                    fileName).getAbsoluteFile()));
+            try {
+                String s;
+                while ((s = in.readLine()) != null) {
+                    sb.append(s);
+                    sb.append("\n");
+                }
+            } finally {
+                in.close();
+            }
+        } catch (IOException e) {
+            throw new RuntimeException(e);
         }
-      } finally {
-        in.close();
-      }
-    } catch(IOException e) {
-      throw new RuntimeException(e);
+        return sb.toString();
     }
-    return sb.toString();
-  }
   // Write a single file in one method call:
   public static void write(String fileName, String text) {
     try {

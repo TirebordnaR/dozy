@@ -16,6 +16,16 @@ import com.dozy.learn.interfaces.interfaceprocessor.*;
 import com.dozy.learn.interfaces.music4.Music4;
 import com.dozy.learn.interfaces.music5.Music5;
 import com.dozy.learn.interfaces.nesting.NestingInterfaces;
+import com.dozy.learn.innerclasses.*;
+import com.dozy.learn.holding.*;
+import com.dozy.learn.exceptions.*;
+import com.dozy.learn.strings.*;
+import com.dozy.learn.typeinfo.*;
+import com.dozy.learn.typeinfo.pets.*;
+import com.dozy.learn.typeinfo.toys.*;
+import com.dozy.learn.generics.*;
+import com.dozy.learn.generics.coffee.CoffeeGenerator;
+import com.dozy.learn.generics.decorator.Decoration;
 
 public class LearnJava {
 
@@ -25,7 +35,7 @@ public class LearnJava {
     public static void main(String[] args) {
         System.out.println("Hey java, you're good. 才怪咧！");
 
-        int i = 8;
+        int i = 14;
         switch (i) {
         case 1:
             dozyObject();
@@ -50,6 +60,24 @@ public class LearnJava {
             break;
         case 8:
             dozyInterfaces();
+            break;
+        case 9:
+            dozyInnerclasses();
+            break;
+        case 10:
+            dozyHolding();
+            break;
+        case 11:
+            dozyExceptions();
+            break;
+        case 12:
+            dozyStrings();
+            break;
+        case 13:
+            dozyTypeinfo();
+            break;
+        case 14:
+            dozyGenerics();
             break;
         default:
             break;
@@ -181,7 +209,7 @@ public class LearnJava {
         ReferenceCounting.main(null);
         RTTI.main(null);
         Sandwich.main(null);
-        Shapes.main(null);
+        com.dozy.learn.polymorphism.Shapes.main(null);
         StaticPolymorphism.main(null);
         Transmogrify.main(null);
         Music.main(null);
@@ -204,5 +232,237 @@ public class LearnJava {
         Music4.main(null);
         Music5.main(null);
         NestingInterfaces.main(null);
+    }
+
+    private static void dozyInnerclasses() {
+        AnonymousConstructor.main(null);
+        BigEgg.main(null);
+        BigEgg2.main(null);
+        Callbacks.main(null);
+        //ClassInInterface.main(null);
+        DotNew.main(null);
+        DotThis.main(null);
+        Factories.main(null);
+        Games.main(null);
+        //GreenhouseController.main(null);
+        InheritInner.main(null);
+        LocalInnerClass.main(null);
+        MultiImplementation.main(null);
+        MultiInterfaces.main(null);
+        MultiNestingAccess.main(null);
+        Parcel1.main(null);
+        Parcel10.main(null);
+        Parcel11.main(null);
+        Parcel2.main(null);
+        Parcel3.main(null);
+        Parcel5.main(null);
+        Parcel6.main(null);
+        Parcel7.main(null);
+        Parcel7b.main(null);
+        Parcel8.main(null);
+        Parcel9.main(null);
+        Sequence.main(null);
+        TestBed.Tester.main(null);
+        TestParcel.main(null);
+    }
+
+    private static void dozyHolding() {
+        AdapterMethodIdiom.main(null);
+        AddingGroups.main(null);
+        ApplesAndOrangesWithGenerics.main(null);
+        ApplesAndOrangesWithoutGenerics.main(null);
+        ArrayIsNotIterable.main(null);
+        AsListInference.main(null);
+        CollectionSequence.main(null);
+        ContainerMethods.main(null);
+        CrossContainerIteration.main(null);
+        EnvironmentVariables.main(null);
+        ForEachCollections.main(null);
+        GenericsAndUpcasting.main(null);
+        InterfaceVsIterator.main(null);
+        IterableClass.main(null);
+        LinkedListFeatures.main(null);
+        ListFeatures.main(null);
+        ListIteration.main(null);
+        MapOfList.main(null);
+        ModifyingArraysAsList.main(null);
+        MultiIterableClass.main(null);
+        NonCollectionSequence.main(null);
+        PetMap.main(null);
+        PrintingContainers.main(null);
+        PriorityQueueDemo.main(null);
+        QueueDemo.main(null);
+        SetOfInteger.main(null);
+        SetOperations.main(null);
+        SimpleCollection.main(null);
+        SimpleIteration.main(null);
+        SortedSetOfInteger.main(null);
+        StackCollision.main(null);
+        StackTest.main(null);
+        Statistics.main(null);
+        UniqueWords.main(null);
+        UniqueWordsAlphabetic.main(null);
+    }
+
+    private static void dozyExceptions() {
+        AlwaysFinally.main(null);
+        Cleanup.main(null);
+        CleanupIdiom.main(null);
+        DynamicFields.main(null);
+        ExceptionMethods.main(null);
+        ExceptionSilencer.main(null);
+        ExtraFeatures.main(null);
+        FinallyWorks.main(null);
+        FullConstructors.main(null);
+        Human.main(null);
+        InheritingExceptions.main(null);
+        LoggingExceptions.main(null);
+        LoggingExceptions2.main(null);
+        LostMessage.main(null);
+        //MainException.main(null);
+        MultipleReturns.main(null);
+        //NeverCaught.main(null);
+        OnOffSwitch.main(null);
+        Rethrowing.main(null);
+        RethrowNew.main(null);
+        StormyInning.main(null);
+        TurnOffChecking.main(null);
+        WhoCalled.main(null);
+        WithFinally.main(null);
+    }
+
+    private static void dozyStrings() {
+        ArrayListDisplay.main(null);
+        BetterRead.main(null);
+        Concatenation.main(null);
+        Conversion.main(null);
+        DatabaseException.main(null);
+        Finding.main(null);
+        Groups.main(null);
+        Immutable.main(null);
+        IntegerMatch.main(null);
+        //JGrep.main(null);
+        Receipt.main(null);
+        ReFlags.main(null);
+        Replacing.main(null);
+        ReplacingStringTokenizer.main(null);
+        //Resetting.main(null);
+        Rudolph.main(null);
+        ScannerDelimiter.main(null);
+        SimpleFormat.main(null);
+        //SimpleRead.main(null);
+        SplitDemo.main(null);
+        Splitting.main(null);
+        StartEnd.main(null);
+        //TestRegularExpression.main(null);
+        //TheReplacements.main(null);
+        ThreatAnalyzer.main(null);
+        Turtle.main(null);
+        UsingStringBuilder.main(null);
+    }
+
+    private static void dozyTypeinfo() {
+        //AnonymousImplementation.main(null);
+        BoundedClassReferences.main(null);
+        ClassCasts.main(null);
+        //ClassInitialization.main(null);
+        FamilyVsExactType.main(null);
+        FilledList.main(null);
+        GenericClassReferences.main(null);
+        //HiddenImplementation.main(null);
+        //InnerImplementation.main(null);
+        InterfaceViolation.main(null);
+        //ModifyingPrivateFields.main(null);
+        NullRobot.main(null);
+        PetCount.main(null);
+        PetCount2.main(null);
+        PetCount3.main(null);
+        PetCount4.main(null);
+        RegisteredFactories.main(null);
+        SelectingMethods.main(null);
+        com.dozy.learn.typeinfo.Shapes.main(null);
+        //ShowMethods.main(null);
+        SimpleDynamicProxy.main(null);
+        SimpleProxyDemo.main(null);
+        SnowRemovalRobot.main(null);
+        Staff.main(null);
+        SweetShop.main(null);
+        WildcardClassReferences.main(null);
+        LiteralPetCreator.main(null);
+        //GenericToyTest.main(null);
+        ToyTest.main(null);
+    }
+    
+    private static void dozyGenerics() {
+        Apply.main(null);
+        ArrayMaker.main(null);
+        ArrayOfGeneric.main(null);
+        BankTeller.main(null);
+        BasicBounds.main(null);
+        BasicGeneratorDemo.main(null);
+        CaptureConversion.main(null);
+        //CheckedList.main(null);
+        ClassTypeCapture.main(null);
+        CompilerIntelligence.main(null);
+        CovariantArrays.main(null);
+        CreatorGeneric.main(null);
+        CRGWithBasicHolder.main(null);
+        DogsAndRobots.main(null);
+        DynamicProxyMixin.main(null);
+        EpicBattle.main(null);
+        ErasedTypeEquivalence.main(null);
+        ErasureAndInheritance.main(null);
+        ExplicitTypeSpecification.main(null);
+        FactoryConstraint.main(null);
+        Fibonacci.main(null);
+        //Fill.main(null);
+        //Fill2.main(null);
+        FilledListMaker.main(null);
+        Functional.main(null);
+        Generators.main(null);
+        GenericArray.main(null);
+        GenericArray2.main(null);
+        GenericArrayWithTypeToken.main(null);
+        GenericCast.main(null);
+        GenericHolder.main(null);
+        GenericMethods.main(null);
+        GenericReading.main(null);
+        GenericsAndCovariance.main(null);
+        GenericVarargs.main(null);
+        GenericWriting.main(null);
+        Holder.main(null);
+        Holder2.main(null);
+        Holder3.main(null);
+        InheritBounds.main(null);
+        InstantiateGenericType.main(null);
+        IterableFibonacci.main(null);
+        LatentReflection.main(null);
+        LimitsOfInference.main(null);
+        LinkedStack.main(null);
+        ListMaker.main(null);
+        ListOfInt.main(null);
+        LostInformation.main(null);
+        Mixins.main(null);
+        OrdinaryArguments.main(null);
+        PlainGenericInheritance.main(null);
+        PrimitiveGenericTest.main(null);
+        RandomList.main(null);
+        SelfBounding.main(null);
+        SelfBoundingMethods.main(null);
+        SimpleDogsAndRobots.main(null);
+        SimpleHolder.main(null);
+        SimplerPets.main(null);
+        Store.main(null);
+        ThrowGenericException.main(null);
+        TupleList.main(null);
+        TupleTest.main(null);
+        TupleTest2.main(null);
+        UnboundedWildcards1.main(null);
+        UnboundedWildcards2.main(null);
+        Unconstrained.main(null);
+        WatercolorSets.main(null);
+        Wildcards.main(null);
+        CoffeeGenerator.main(null);
+        Decoration.main(null);
     }
 }
