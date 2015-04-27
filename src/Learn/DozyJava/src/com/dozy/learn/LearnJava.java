@@ -1,6 +1,8 @@
 package com.dozy.learn;
+
 import com.dozy.learn.object.*;
 import com.dozy.learn.operators.*;
+import com.dozy.learn.control.*;
 
 public class LearnJava {
 
@@ -10,13 +12,16 @@ public class LearnJava {
     public static void main(String[] args) {
         System.out.println("Hey java, you're good. 才怪咧！");
 
-        int i = 2;
+        int i = 3;
         switch (i) {
         case 1:
             dozyObject();
             break;
         case 2:
             dozyOperators();
+            break;
+        case 3:
+            dozyControl();
             break;
         default:
             break;
@@ -27,7 +32,7 @@ public class LearnJava {
         HelloDate.dozy_main(null);
         ShowProperties.dozy_main(null);
     }
-    
+
     private static void dozyOperators() {
         Assignment.dozy_main(null);
         AutoInc.dozy_main(null);
@@ -50,5 +55,20 @@ public class LearnJava {
         StringOperators.dozy_main(null);
         TernaryIfElse.dozy_main(null);
         URShift.dozy_main(null);
+    }
+
+    private static void dozyControl() {
+        BreakAndContinue.dozy_main(null);
+        CommaOperator.dozy_main(null);
+        ForEachFloat.dozy_main(null);
+        ForEachInt.dozy_main(null);
+        ForEachString.dozy_main(null);
+        IfElse.dozy_main(null);
+        IfElse2.dozy_main(null);
+        LabeledFor.dozy_main(null);
+        LabeledWhile.dozy_main(null);
+        ListCharacters.dozy_main(null);
+        VowelsAndConsonants.dozy_main(null);
+        WhileTest.dozy_main(null);
     }
 }
