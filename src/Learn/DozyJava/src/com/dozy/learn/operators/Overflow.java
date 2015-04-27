@@ -3,7 +3,7 @@ package com.dozy.learn.operators;
 // Surprise! Java lets you overflow.
 
 public class Overflow {
-    public static void dozy_main(String[] args) {
+    public static void main(String[] args) {
         int big = Integer.MAX_VALUE;
         System.out.println("big = " + big);
         int bigger = big * 4;

@@ -5,7 +5,7 @@ package com.dozy.learn.control;
 // all the lowercase ASCII letters.
 
 public class ListCharacters {
-    public static void dozy_main(String[] args) {
+    public static void main(String[] args) {
         for (char c = 0; c < 128; c++)
             if (Character.isLowerCase(c))
                 System.out.println("value: " + (int) c + " character: " + c);

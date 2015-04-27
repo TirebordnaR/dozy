@@ -4,7 +4,7 @@ package com.dozy.learn.operators;
 import static net.mindview.util.Print.*;
 
 public class RoundingNumbers {
-    public static void dozy_main(String[] args) {
+    public static void main(String[] args) {
         double above = 0.7, below = 0.4;
         float fabove = 0.7f, fbelow = 0.4f;
         print("Math.round(above): " + Math.round(above));

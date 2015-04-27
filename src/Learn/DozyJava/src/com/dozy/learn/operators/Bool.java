@@ -5,7 +5,7 @@ import java.util.*;
 import static net.mindview.util.Print.*;
 
 public class Bool {
-    public static void dozy_main(String[] args) {
+    public static void main(String[] args) {
         Random rand = new Random(47);
         int i = rand.nextInt(100);
         int j = rand.nextInt(100);

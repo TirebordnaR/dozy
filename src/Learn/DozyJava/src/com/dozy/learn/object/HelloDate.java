@@ -20,7 +20,7 @@ public class HelloDate {
      * @throws exceptions
      *             No exceptions thrown
      */
-    public static void dozy_main(String[] args) {
+    public static void main(String[] args) {
         System.out.println("Hello, it's: ");
         System.out.println(new Date());
     }

@@ -2,7 +2,7 @@
 package com.dozy.learn.operators;
 
 public class Casting {
-    public static void dozy_main(String[] args) {
+    public static void main(String[] args) {
         int i = 200;
         long lng = (long) i;
         lng = i; // "Widening," so cast not really required

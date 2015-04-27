@@ -3,7 +3,7 @@ package com.dozy.learn.operators;
 // "e" means "10 to the power."
 
 public class Exponents {
-    public static void dozy_main(String[] args) {
+    public static void main(String[] args) {
         // Uppercase and lowercase 'e' are the same:
         float expFloat = 1.39e-43f;
         expFloat = 1.39E-43f;

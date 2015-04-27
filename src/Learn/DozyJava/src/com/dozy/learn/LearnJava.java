@@ -33,47 +33,47 @@ public class LearnJava {
     }
 
     private static void dozyObject() {
-        HelloDate.dozy_main(null);
-        ShowProperties.dozy_main(null);
+        HelloDate.main(null);
+        ShowProperties.main(null);
     }
 
     private static void dozyOperators() {
-        Assignment.dozy_main(null);
-        AutoInc.dozy_main(null);
-        BitManipulation.dozy_main(null);
-        Bool.dozy_main(null);
-        Casting.dozy_main(null);
-        CastingNumbers.dozy_main(null);
-        EqualsMethod.dozy_main(null);
-        EqualsMethod2.dozy_main(null);
-        Equivalence.dozy_main(null);
-        Exponents.dozy_main(null);
-        HelloDate.dozy_main(null);
-        Literals.dozy_main(null);
-        MathOps.dozy_main(null);
-        Overflow.dozy_main(null);
-        PassObject.dozy_main(null);
-        Precedence.dozy_main(null);
-        RoundingNumbers.dozy_main(null);
-        ShortCircuit.dozy_main(null);
-        StringOperators.dozy_main(null);
-        TernaryIfElse.dozy_main(null);
-        URShift.dozy_main(null);
+        Assignment.main(null);
+        AutoInc.main(null);
+        BitManipulation.main(null);
+        Bool.main(null);
+        Casting.main(null);
+        CastingNumbers.main(null);
+        EqualsMethod.main(null);
+        EqualsMethod2.main(null);
+        Equivalence.main(null);
+        Exponents.main(null);
+        HelloDate.main(null);
+        Literals.main(null);
+        MathOps.main(null);
+        Overflow.main(null);
+        PassObject.main(null);
+        Precedence.main(null);
+        RoundingNumbers.main(null);
+        ShortCircuit.main(null);
+        StringOperators.main(null);
+        TernaryIfElse.main(null);
+        URShift.main(null);
     }
 
     private static void dozyControl() {
-        BreakAndContinue.dozy_main(null);
-        CommaOperator.dozy_main(null);
-        ForEachFloat.dozy_main(null);
-        ForEachInt.dozy_main(null);
-        ForEachString.dozy_main(null);
-        IfElse.dozy_main(null);
-        IfElse2.dozy_main(null);
-        LabeledFor.dozy_main(null);
-        LabeledWhile.dozy_main(null);
-        ListCharacters.dozy_main(null);
-        VowelsAndConsonants.dozy_main(null);
-        WhileTest.dozy_main(null);
+        BreakAndContinue.main(null);
+        CommaOperator.main(null);
+        ForEachFloat.main(null);
+        ForEachInt.main(null);
+        ForEachString.main(null);
+        IfElse.main(null);
+        IfElse2.main(null);
+        LabeledFor.main(null);
+        LabeledWhile.main(null);
+        ListCharacters.main(null);
+        VowelsAndConsonants.main(null);
+        WhileTest.main(null);
     }
     
     private static void dozyInitialization() {

@@ -7,7 +7,7 @@ class Value {
 }
 
 public class EqualsMethod2 {
-    public static void dozy_main(String[] args) {
+    public static void main(String[] args) {
         Value v1 = new Value();
         Value v2 = new Value();
         v1.i = v2.i = 100;

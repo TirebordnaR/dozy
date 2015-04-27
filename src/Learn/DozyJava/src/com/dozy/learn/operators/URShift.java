@@ -4,7 +4,7 @@ package com.dozy.learn.operators;
 import static net.mindview.util.Print.*;
 
 public class URShift {
-    public static void dozy_main(String[] args) {
+    public static void main(String[] args) {
         int i = -1;
         print(Integer.toBinaryString(i));
         i >>>= 10;

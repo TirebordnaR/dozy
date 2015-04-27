@@ -24,7 +24,7 @@ public class ShortCircuit {
         return val < 3;
     }
 
-    public static void dozy_main(String[] args) {
+    public static void main(String[] args) {
         boolean b = test1(0) && test2(2) && test3(2);
         print("expression is " + b);
     }

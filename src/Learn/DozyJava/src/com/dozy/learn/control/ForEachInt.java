@@ -5,7 +5,7 @@ import static net.mindview.util.Range.*;
 import static net.mindview.util.Print.*;
 
 public class ForEachInt {
-    public static void dozy_main(String[] args) {
+    public static void main(String[] args) {
         for (int i : range(10))
             // 0..9
             printnb(i + " ");

@@ -5,7 +5,7 @@ package com.dozy.learn.control;
 import static net.mindview.util.Print.*;
 
 public class LabeledFor {
-    public static void dozy_main(String[] args) {
+    public static void main(String[] args) {
         int i = 0;
         outer: // Can't have statements here
         for (; true;) { // infinite loop

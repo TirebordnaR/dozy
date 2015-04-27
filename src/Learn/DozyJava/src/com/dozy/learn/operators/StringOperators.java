@@ -3,7 +3,7 @@ package com.dozy.learn.operators;
 import static net.mindview.util.Print.*;
 
 public class StringOperators {
-    public static void dozy_main(String[] args) {
+    public static void main(String[] args) {
         int x = 0, y = 1, z = 2;
         String s = "x, y, z ";
         print(s + x + y + z);

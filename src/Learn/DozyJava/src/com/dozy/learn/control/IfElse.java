@@ -15,7 +15,7 @@ public class IfElse {
             result = 0; // Match
     }
 
-    public static void dozy_main(String[] args) {
+    public static void main(String[] args) {
         test(10, 5);
         print(result);
         test(5, 10);

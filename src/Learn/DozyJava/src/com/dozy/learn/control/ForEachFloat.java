@@ -4,7 +4,7 @@ package com.dozy.learn.control;
 import java.util.*;
 
 public class ForEachFloat {
-    public static void dozy_main(String[] args) {
+    public static void main(String[] args) {
         Random rand = new Random(47);
         float f[] = new float[10];
         for (int i = 0; i < 10; i++)

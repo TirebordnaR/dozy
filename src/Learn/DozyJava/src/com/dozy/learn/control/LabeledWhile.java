@@ -5,7 +5,7 @@ package com.dozy.learn.control;
 import static net.mindview.util.Print.*;
 
 public class LabeledWhile {
-    public static void dozy_main(String[] args) {
+    public static void main(String[] args) {
         int i = 0;
         outer: while (true) {
             print("Outer while loop");

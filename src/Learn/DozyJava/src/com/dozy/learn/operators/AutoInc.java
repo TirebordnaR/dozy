@@ -5,7 +5,7 @@ package com.dozy.learn.operators;
 import static net.mindview.util.Print.*;
 
 public class AutoInc {
-    public static void dozy_main(String[] args) {
+    public static void main(String[] args) {
         int i = 1;
         print("i : " + i);
         print("++i : " + ++i); // Pre-increment

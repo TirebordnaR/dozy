@@ -13,7 +13,7 @@ public class IfElse2 {
             return 0; // Match
     }
 
-    public static void dozy_main(String[] args) {
+    public static void main(String[] args) {
         print(test(10, 5));
         print(test(5, 10));
         print(test(5, 5));

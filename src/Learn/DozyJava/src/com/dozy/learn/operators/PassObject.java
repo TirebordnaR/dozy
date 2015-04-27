@@ -13,7 +13,7 @@ public class PassObject {
     y.c = 'z';
   }
 
-    public static void dozy_main(String[] args) {
+    public static void main(String[] args) {
         Letter x = new Letter();
         x.c = 'a';
         print("1: x.c: " + x.c);

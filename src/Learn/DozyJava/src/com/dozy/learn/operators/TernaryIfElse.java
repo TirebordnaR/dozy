@@ -13,7 +13,7 @@ public class TernaryIfElse {
       return i * 10;
   }
 
-    public static void dozy_main(String[] args) {
+    public static void main(String[] args) {
         print(ternary(9));
         print(ternary(10));
         print(standardIfElse(9));

@@ -10,7 +10,7 @@ public class WhileTest {
         return result;
     }
 
-    public static void dozy_main(String[] args) {
+    public static void main(String[] args) {
         while (condition())
             System.out.println("Inside 'while'");
         System.out.println("Exited 'while'");

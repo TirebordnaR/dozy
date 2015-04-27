@@ -5,7 +5,7 @@ package com.dozy.learn.control;
 import static net.mindview.util.Range.*;
 
 public class BreakAndContinue {
-    public static void dozy_main(String[] args) {
+    public static void main(String[] args) {
         for (int i = 0; i < 100; i++) {
             if (i == 74)
                 break; // Out of for loop

@@ -5,7 +5,7 @@ import java.util.*;
 import static net.mindview.util.Print.*;
 
 public class BitManipulation {
-    public static void dozy_main(String[] args) {
+    public static void main(String[] args) {
         Random rand = new Random(47);
         int i = rand.nextInt();
         int j = rand.nextInt();

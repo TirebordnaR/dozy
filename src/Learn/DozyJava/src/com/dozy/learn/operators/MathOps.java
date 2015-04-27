@@ -5,7 +5,7 @@ import java.util.*;
 import static net.mindview.util.Print.*;
 
 public class MathOps {
-    public static void dozy_main(String[] args) {
+    public static void main(String[] args) {
         // Create a seeded random number generator:
         Random rand = new Random(47);
         int i, j, k;
