@@ -6,6 +6,16 @@ import com.dozy.learn.control.*;
 import com.dozy.learn.initialization.*;
 import com.dozy.learn.access.*;
 import com.dozy.learn.reusing.*;
+import com.dozy.learn.polymorphism.*;
+import com.dozy.learn.polymorphism.music.Music;
+import com.dozy.learn.polymorphism.music.Music2;
+import com.dozy.learn.polymorphism.music3.Music3;
+import com.dozy.learn.interfaces.*;
+import com.dozy.learn.interfaces.classprocessor.Apply;
+import com.dozy.learn.interfaces.interfaceprocessor.*;
+import com.dozy.learn.interfaces.music4.Music4;
+import com.dozy.learn.interfaces.music5.Music5;
+import com.dozy.learn.interfaces.nesting.NestingInterfaces;
 
 public class LearnJava {
 
@@ -15,7 +25,7 @@ public class LearnJava {
     public static void main(String[] args) {
         System.out.println("Hey java, you're good. 才怪咧！");
 
-        int i = 6;
+        int i = 8;
         switch (i) {
         case 1:
             dozyObject();
@@ -34,6 +44,12 @@ public class LearnJava {
             break;
         case 6:
             dozyReusing();
+            break;
+        case 7:
+            dozyPolymorphism();
+            break;
+        case 8:
+            dozyInterfaces();
             break;
         default:
             break;
@@ -83,7 +99,7 @@ public class LearnJava {
         VowelsAndConsonants.main(null);
         WhileTest.main(null);
     }
-    
+
     private static void dozyInitialization() {
         ArrayClassObj.main(null);
         ArrayInit.main(null);
@@ -119,7 +135,7 @@ public class LearnJava {
         VarArgs.main(null);
         VarargType.main(null);
     }
-    
+
     private static void dozyAccess() {
         // Cake.main(null); // The type Cake is not visible
         ChocolateChip.main(null);
@@ -133,7 +149,7 @@ public class LearnJava {
         QualifiedMyClass.main(null);
         SingleImport.main(null);
     }
-    
+
     private static void dozyReusing() {
         Bath.main(null);
         Beetle.main(null);
@@ -154,5 +170,39 @@ public class LearnJava {
         SpaceShipDelegation.main(null);
         SprinklerSystem.main(null);
         Wind.main(null);
+    }
+
+    private static void dozyPolymorphism() {
+        CovariantReturn.main(null);
+        FieldAccess.main(null);
+        Frog.main(null);
+        PolyConstructors.main(null);
+        PrivateOverride.main(null);
+        ReferenceCounting.main(null);
+        RTTI.main(null);
+        Sandwich.main(null);
+        Shapes.main(null);
+        StaticPolymorphism.main(null);
+        Transmogrify.main(null);
+        Music.main(null);
+        Music2.main(null);
+        Music3.main(null);
+    }
+
+    private static void dozyInterfaces() {
+        AdaptedRandomDoubles.main(null);
+        Adventure.main(null);
+        Factories.main(null);
+        Games.main(null);
+        HorrorShow.main(null);
+        RandomDoubles.main(null);
+        RandomWords.main(null);
+        TestRandVals.main(null);
+        Apply.main(null);
+        FilterProcessor.main(null);
+        StringProcessor.main(null);
+        Music4.main(null);
+        Music5.main(null);
+        NestingInterfaces.main(null);
     }
 }
