@@ -4,6 +4,7 @@ import com.dozy.learn.object.*;
 import com.dozy.learn.operators.*;
 import com.dozy.learn.control.*;
 import com.dozy.learn.initialization.*;
+import com.dozy.learn.access.*;
 
 public class LearnJava {
 
@@ -13,7 +14,7 @@ public class LearnJava {
     public static void main(String[] args) {
         System.out.println("Hey java, you're good. 才怪咧！");
 
-        int i = 4;
+        int i = 5;
         switch (i) {
         case 1:
             dozyObject();
@@ -26,6 +27,9 @@ public class LearnJava {
             break;
         case 4:
             dozyInitialization();
+            break;
+        case 5:
+            dozyAccess();
             break;
         default:
             break;
@@ -110,5 +114,20 @@ public class LearnJava {
         TerminationCondition.main(null);
         VarArgs.main(null);
         VarargType.main(null);
+    }
+    
+    private static void dozyAccess() {
+        // Cake.main(null); // The type Cake is not visible
+        ChocolateChip.main(null);
+        ChocolateChip2.main(null);
+        Dinner.main(null);
+        FullQualification.main(null);
+        IceCream.main(null);
+        ImportedMyClass.main(null);
+        LibTest.main(null);
+        PrintTest.main(null);
+        QualifiedMyClass.main(null);
+        SingleImport.main(null);
+
     }
 }
