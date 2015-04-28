@@ -1,9 +1,10 @@
 //: operators/EqualsMethod2.java
 package com.dozy.learn.operators;
+
 // Default equals() does not compare contents.
 
 class Value {
-  int i;
+    int i;
 }
 
 public class EqualsMethod2 {
@@ -13,6 +14,6 @@ public class EqualsMethod2 {
         v1.i = v2.i = 100;
         System.out.println(v1.equals(v2));
     }
-} /* Output:
-false
-*///:~
+} /*
+   * Output: false
+   */// :~

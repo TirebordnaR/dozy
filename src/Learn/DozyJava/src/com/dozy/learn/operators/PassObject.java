@@ -1,17 +1,18 @@
 //: operators/PassObject.java
 package com.dozy.learn.operators;
+
 // Passing objects to methods may not be
 // what you're used to.
 import static net.mindview.util.Print.*;
 
 class Letter {
-  char c;
+    char c;
 }
 
 public class PassObject {
-  static void f(Letter y) {
-    y.c = 'z';
-  }
+    static void f(Letter y) {
+        y.c = 'z';
+    }
 
     public static void main(String[] args) {
         Letter x = new Letter();

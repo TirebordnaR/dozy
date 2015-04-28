@@ -60,6 +60,7 @@ public class AllOps {
         // ! double d = (double)x;
     }
 
+    @SuppressWarnings("unused")
     void charTest(char x, char y) {
         // Arithmetic operators:
         x = (char) (x * y);
@@ -111,6 +112,7 @@ public class AllOps {
         double d = (double) x;
     }
 
+    @SuppressWarnings("unused")
     void byteTest(byte x, byte y) {
         // Arithmetic operators:
         x = (byte) (x * y);
@@ -162,6 +164,7 @@ public class AllOps {
         double d = (double) x;
     }
 
+    @SuppressWarnings("unused")
     void shortTest(short x, short y) {
         // Arithmetic operators:
         x = (short) (x * y);
@@ -213,6 +216,7 @@ public class AllOps {
         double d = (double) x;
     }
 
+    @SuppressWarnings("unused")
     void intTest(int x, int y) {
         // Arithmetic operators:
         x = x * y;
@@ -264,6 +268,7 @@ public class AllOps {
         double d = (double) x;
     }
 
+    @SuppressWarnings("unused")
     void longTest(long x, long y) {
         // Arithmetic operators:
         x = x * y;
@@ -315,6 +320,7 @@ public class AllOps {
         double d = (double) x;
     }
 
+    @SuppressWarnings("unused")
     void floatTest(float x, float y) {
         // Arithmetic operators:
         x = x * y;
@@ -366,6 +372,7 @@ public class AllOps {
         double d = (double) x;
     }
 
+    @SuppressWarnings("unused")
     void doubleTest(double x, double y) {
         // Arithmetic operators:
         x = x * y;

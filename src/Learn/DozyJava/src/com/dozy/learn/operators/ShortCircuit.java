@@ -29,5 +29,10 @@ public class ShortCircuit {
         print("expression is " + b);
     }
 } /*
-   * Output: test1(0) result: true test2(2) result: false expression is false
+   * Output: 
+test1(0)
+result: true
+test2(2)
+result: false
+expression is false
    */// :~

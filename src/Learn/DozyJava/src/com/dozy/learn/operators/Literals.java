@@ -3,6 +3,7 @@ package com.dozy.learn.operators;
 import static net.mindview.util.Print.*;
 
 public class Literals {
+    @SuppressWarnings("unused")
     public static void main(String[] args) {
         int i1 = 0x2f; // Hexadecimal (lowercase)
         print("i1: " + Integer.toBinaryString(i1));

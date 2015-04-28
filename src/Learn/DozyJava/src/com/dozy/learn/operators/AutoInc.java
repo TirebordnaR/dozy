@@ -16,5 +16,12 @@ public class AutoInc {
         print("i : " + i);
     }
 } /*
-   * Output: i : 1 ++i : 2 i++ : 2 i : 3 --i : 2 i-- : 2 i : 1
+   * Output:
+   * i : 1
+   * ++i : 2
+   * i++ : 2
+   * i : 3
+   * --i : 2
+   * i-- : 2
+   * i : 1
    */// :~
