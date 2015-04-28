@@ -11,6 +11,7 @@ public class ThreatAnalyzer {
             + "[Next log section with different data format]";
 
     public static void main(String[] args) {
+        @SuppressWarnings("resource")
         Scanner scanner = new Scanner(threatData);
         String pattern = "(\\d+[.]\\d+[.]\\d+[.]\\d+)@"
                 + "(\\d{2}/\\d{2}/\\d{4})";

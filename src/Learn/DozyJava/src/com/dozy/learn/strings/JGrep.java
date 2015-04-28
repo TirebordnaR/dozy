@@ -8,15 +8,17 @@ import net.mindview.util.*;
 
 public class JGrep {
     public static void main(String[] args) throws Exception {
-        if (args.length < 2) {
+/*        if (args.length < 2) {
             System.out.println("Usage: java JGrep file regex");
             System.exit(0);
-        }
-        Pattern p = Pattern.compile(args[1]);
+        }*/
+        String arg0 = "src\\com\\dozy\\learn\\strings\\JGrep.java";
+        String arg1 = "\\b[Ssct]\\w+";
+        Pattern p = Pattern.compile(arg1);
         // Iterate through the lines of the input file:
         int index = 0;
         Matcher m = p.matcher("");
-        for (String line : new TextFile(args[0])) {
+        for (String line : new TextFile(arg0)) {
             m.reset(line);
             while (m.find())
                 System.out.println(index++ + ": " + m.group() + ": "

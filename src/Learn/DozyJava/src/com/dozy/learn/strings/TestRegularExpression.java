@@ -8,16 +8,17 @@ import static net.mindview.util.Print.*;
 
 public class TestRegularExpression {
     public static void main(String[] args) {
-        if (args.length < 2) {
+/*        if (args.length < 2) {
             print("Usage:\njava TestRegularExpression "
                     + "characterSequence regularExpression+");
             System.exit(0);
-        }
-        print("Input: \"" + args[0] + "\"");
-        for (String arg : args) {
+        }*/
+        String[] argx = { "abcabcabcdefabc", "abc+", "(abc)+", "(abc){2,}" };
+        print("Input: \"" + argx[0] + "\"");
+        for (String arg : argx) {
             print("Regular expression: \"" + arg + "\"");
             Pattern p = Pattern.compile(arg);
-            Matcher m = p.matcher(args[0]);
+            Matcher m = p.matcher(argx[0]);
             while (m.find()) {
                 print("Match \"" + m.group() + "\" at positions " + m.start()
                         + "-" + (m.end() - 1));

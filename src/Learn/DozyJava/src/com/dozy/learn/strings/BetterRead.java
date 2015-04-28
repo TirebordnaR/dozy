@@ -4,6 +4,7 @@ package com.dozy.learn.strings;
 import java.util.*;
 
 public class BetterRead {
+    @SuppressWarnings("resource")
     public static void main(String[] args) {
         Scanner stdin = new Scanner(SimpleRead.input);
         System.out.println("What is your name?");

@@ -11,6 +11,7 @@ public class ReplacingStringTokenizer {
             System.out.print(stoke.nextToken() + " ");
         System.out.println();
         System.out.println(Arrays.toString(input.split(" ")));
+        @SuppressWarnings("resource")
         Scanner scanner = new Scanner(input);
         while (scanner.hasNext())
             System.out.print(scanner.next() + " ");

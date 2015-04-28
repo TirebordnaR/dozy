@@ -42,7 +42,7 @@ public class LearnJava {
     public static void main(String[] args) {
         System.out.println("Hey java, you're good. 才怪咧！");
 
-        int i = 11;
+        int i = 12;
         switch (i) {
         case 1:
             dozyObject();
@@ -371,21 +371,33 @@ public class LearnJava {
         Groups.main(null);
         Immutable.main(null);
         IntegerMatch.main(null);
-        // JGrep.main(null);
+        try {
+            JGrep.main(null);
+        } catch (Exception e) {
+        }
         Receipt.main(null);
         ReFlags.main(null);
         Replacing.main(null);
         ReplacingStringTokenizer.main(null);
-        // Resetting.main(null);
+        try {
+            Resetting.main(null);
+        } catch (Exception e) {
+        }
         Rudolph.main(null);
         ScannerDelimiter.main(null);
         SimpleFormat.main(null);
-        // SimpleRead.main(null);
+        try {
+            SimpleRead.main(null);
+        } catch (Exception e) {
+        }
         SplitDemo.main(null);
         Splitting.main(null);
         StartEnd.main(null);
-        // TestRegularExpression.main(null);
-        // TheReplacements.main(null);
+        TestRegularExpression.main(null);
+        try {
+            TheReplacements.main(null);
+        } catch (Exception e) {
+        }
         ThreatAnalyzer.main(null);
         Turtle.main(null);
         UsingStringBuilder.main(null);

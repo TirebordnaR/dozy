@@ -5,6 +5,7 @@ import java.math.*;
 import java.util.*;
 
 public class Conversion {
+    @SuppressWarnings("resource")
     public static void main(String[] args) {
         Formatter f = new Formatter(System.out);
 
