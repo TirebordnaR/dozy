@@ -5,6 +5,7 @@ import java.util.concurrent.*;
 
 public class EvenChecker implements Runnable {
     private IntGenerator generator;
+    @SuppressWarnings("unused")
     private final int id;
 
     public EvenChecker(IntGenerator g, int ident) {

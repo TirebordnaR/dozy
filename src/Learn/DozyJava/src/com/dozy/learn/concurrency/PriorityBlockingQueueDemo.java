@@ -23,7 +23,7 @@ Runnable, Comparable<PrioritizedTask>  {
 
     public void run() {
         try {
-            TimeUnit.MILLISECONDS.sleep(rand.nextInt(250));
+            TimeUnit.MILLISECONDS.sleep(rand.nextInt(150));
         } catch (InterruptedException e) {
             // Acceptable way to exit
         }
@@ -75,7 +75,7 @@ class PrioritizedTaskProducer implements Runnable {
     // Trickle in highest-priority jobs:
     try {
       for(int i = 0; i < 10; i++) {
-        TimeUnit.MILLISECONDS.sleep(250);
+        TimeUnit.MILLISECONDS.sleep(150);
         queue.add(new PrioritizedTask(10));
       }
       // Add jobs, lowest priority first:
@@ -109,7 +109,8 @@ class PrioritizedTaskConsumer implements Runnable {
 }
 
 public class PriorityBlockingQueueDemo {
-  public static void main(String[] args) throws Exception {
+  @SuppressWarnings("unused")
+public static void main(String[] args) throws Exception {
     Random rand = new Random(47);
     ExecutorService exec = Executors.newCachedThreadPool();
     PriorityBlockingQueue<Runnable> queue =

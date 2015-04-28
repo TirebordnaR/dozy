@@ -8,7 +8,9 @@ import java.util.concurrent.*;
 import java.util.*;
 
 public class GreenhouseScheduler {
+    @SuppressWarnings("unused")
     private volatile boolean light = false;
+    @SuppressWarnings("unused")
     private volatile boolean water = false;
     private String thermostat = "Day";
 

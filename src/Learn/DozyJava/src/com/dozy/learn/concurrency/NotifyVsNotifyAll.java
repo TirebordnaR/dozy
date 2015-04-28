@@ -64,7 +64,7 @@ public class NotifyVsNotifyAll {
                 }
             }
         }, 400, 400); // Run every .4 second
-        TimeUnit.SECONDS.sleep(5); // Run for a while...
+        TimeUnit.SECONDS.sleep(1); // Run for a while...
         timer.cancel();
         System.out.println("\nTimer canceled");
         TimeUnit.MILLISECONDS.sleep(500);

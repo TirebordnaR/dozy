@@ -12,6 +12,7 @@ public class DaemonFromFactory implements Runnable {
             while (true) {
                 TimeUnit.MILLISECONDS.sleep(100);
                 print(Thread.currentThread() + " " + this);
+                break;
             }
         } catch (InterruptedException e) {
             print("Interrupted");
@@ -24,6 +25,6 @@ public class DaemonFromFactory implements Runnable {
         for (int i = 0; i < 10; i++)
             exec.execute(new DaemonFromFactory());
         print("All daemons started");
-        TimeUnit.MILLISECONDS.sleep(500); // Run for a while
+        TimeUnit.MILLISECONDS.sleep(200); // Run for a while
     }
 } /* (Execute to see output) */// :~

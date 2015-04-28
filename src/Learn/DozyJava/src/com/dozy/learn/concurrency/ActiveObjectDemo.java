@@ -26,7 +26,7 @@ public class ActiveObjectDemo {
         return ex.submit(new Callable<Integer>() {
             public Integer call() {
                 print("starting " + x + " + " + y);
-                pause(500);
+                pause(100);
                 return x + y;
             }
         });
@@ -36,7 +36,7 @@ public class ActiveObjectDemo {
         return ex.submit(new Callable<Float>() {
             public Float call() {
                 print("starting " + x + " + " + y);
-                pause(2000);
+                pause(200);
                 return x + y;
             }
         });

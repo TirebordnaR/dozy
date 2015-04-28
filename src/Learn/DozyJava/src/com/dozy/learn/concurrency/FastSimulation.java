@@ -48,7 +48,7 @@ public class FastSimulation {
                 GRID[i][j] = new AtomicInteger(rand.nextInt(1000));
         for (int i = 0; i < N_EVOLVERS; i++)
             exec.execute(new Evolver());
-        TimeUnit.SECONDS.sleep(5);
+        TimeUnit.SECONDS.sleep(1);
         exec.shutdownNow();
     }
 } /* (Execute to see output) */// :~

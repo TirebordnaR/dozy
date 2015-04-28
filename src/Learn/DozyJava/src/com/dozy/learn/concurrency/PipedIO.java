@@ -20,7 +20,7 @@ class Sender implements Runnable {
             while (true)
                 for (char c = 'A'; c <= 'z'; c++) {
                     out.write(c);
-                    TimeUnit.MILLISECONDS.sleep(rand.nextInt(500));
+                    TimeUnit.MILLISECONDS.sleep(rand.nextInt(300));
                 }
         } catch (IOException e) {
             print(e + " Sender write exception");
@@ -56,7 +56,7 @@ public class PipedIO {
         ExecutorService exec = Executors.newCachedThreadPool();
         exec.execute(sender);
         exec.execute(receiver);
-        TimeUnit.SECONDS.sleep(4);
+        TimeUnit.SECONDS.sleep(2);
         exec.shutdownNow();
     }
 } /* Output: (65% match)

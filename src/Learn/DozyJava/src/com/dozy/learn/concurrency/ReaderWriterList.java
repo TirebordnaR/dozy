@@ -56,7 +56,7 @@ class ReaderWriterListTest {
             try {
                 for (int i = 0; i < 20; i++) { // 2 second test
                     list.set(i, rand.nextInt());
-                    TimeUnit.MILLISECONDS.sleep(100);
+                    TimeUnit.MILLISECONDS.sleep(30);
                 }
             } catch (InterruptedException e) {
                 // Acceptable way to exit

@@ -88,9 +88,9 @@ public class DelayQueueDemo {
         DelayQueue<DelayedTask> queue = new DelayQueue<DelayedTask>();
         // Fill with tasks that have random delays:
         for (int i = 0; i < 20; i++)
-            queue.put(new DelayedTask(rand.nextInt(5000)));
+            queue.put(new DelayedTask(rand.nextInt(1000)));
         // Set the stopping point
-        queue.add(new DelayedTask.EndSentinel(5000, exec));
+        queue.add(new DelayedTask.EndSentinel(1000, exec));
         exec.execute(new DelayedTaskConsumer(queue));
     }
 } /* Output:

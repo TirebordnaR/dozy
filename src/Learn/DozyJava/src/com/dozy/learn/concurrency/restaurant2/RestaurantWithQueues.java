@@ -214,12 +214,12 @@ public class RestaurantWithQueues {
         ExecutorService exec = Executors.newCachedThreadPool();
         Restaurant restaurant = new Restaurant(exec, 5, 2);
         exec.execute(restaurant);
-        if (args.length > 0) // Optional argument
-            TimeUnit.SECONDS.sleep(new Integer(args[0]));
-        else {
+        //if (args.length > 0) // Optional argument
+            TimeUnit.SECONDS.sleep(new Integer(1));
+/*        else {
             print("Press 'Enter' to quit");
             System.in.read();
-        }
+        }*/
         exec.shutdownNow();
     }
 } /* Output: (Sample)

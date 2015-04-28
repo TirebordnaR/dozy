@@ -73,7 +73,8 @@ class ConcurrentHashMapTest extends MapTest {
 
 public class MapComparisons {
     public static void main(String[] args) {
-        Tester.initMain(args);
+        String[] argx = { "1", "10", "10" };
+        Tester.initMain(argx);
         new SynchronizedHashMapTest(10, 0);
         new SynchronizedHashMapTest(9, 1);
         new SynchronizedHashMapTest(5, 5);

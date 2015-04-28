@@ -79,7 +79,7 @@ public class WaxOMatic {
         ExecutorService exec = Executors.newCachedThreadPool();
         exec.execute(new WaxOff(car));
         exec.execute(new WaxOn(car));
-        TimeUnit.SECONDS.sleep(5); // Run for a while...
+        TimeUnit.SECONDS.sleep(1); // Run for a while...
         exec.shutdownNow(); // Interrupt all tasks
     }
 } /* Output: (95% match)

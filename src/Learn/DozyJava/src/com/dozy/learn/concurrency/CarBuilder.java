@@ -260,7 +260,7 @@ public class CarBuilder {
         exec.execute(new Reporter(finishingQueue));
         // Start everything running by producing chassis:
         exec.execute(new ChassisBuilder(chassisQueue));
-        TimeUnit.SECONDS.sleep(7);
+        TimeUnit.SECONDS.sleep(2);
         exec.shutdownNow();
     }
 } /* (Execute to see output) */// :~

@@ -33,6 +33,9 @@ import com.dozy.learn.enumerated.*;
 import com.dozy.learn.enumerated.cartoons.EnumImplementation;
 import com.dozy.learn.enumerated.menu.*;
 import com.dozy.learn.concurrency.*;
+import com.dozy.learn.concurrency.restaurant2.*;
+import com.dozy.learn.concurrency.waxomatic.*;
+import com.dozy.learn.concurrency.waxomatic2.*;
 
 public class LearnJava {
 
@@ -42,7 +45,7 @@ public class LearnJava {
     public static void main(String[] args) {
         System.out.println("Hey java, you're good. 才怪咧！");
 
-        int i = 18;
+        int i = 19;
         switch (i) {
         case 1:
             dozyObject();
@@ -671,67 +674,71 @@ public class LearnJava {
     }
 
     private static void dozyConcurrency() {
-        ActiveObjectDemo.main(null);
-        AtomicIntegerTest.main(null);
-        AtomicityTest.main(null);
-        AttemptLocking.main(null);
-        //BankTellerSimulation.main(null);
-        BasicThreads.main(null);
-        CachedThreadPool.main(null);
-        CallableDemo.main(null);
-        CaptureUncaughtException.main(null);
-        //CarBuilder.main(null);
-        //CountDownLatchDemo.main(null);
-        CriticalSection.main(null);
-        //DaemonFromFactory.main(null);
-        //Daemons.main(null);
-        //DaemonsDontRunFinally.main(null);
-        //DeadlockingDiningPhilosophers.main(null);
-        DelayQueueDemo.main(null);
-        EvenGenerator.main(null);
-        ExceptionThread.main(null);
-        //ExchangerDemo.main(null);
-        //ExplicitCriticalSection.main(null);
-        //FastSimulation.main(null);
-        //FixedDiningPhilosophers.main(null);
-        FixedThreadPool.main(null);
-        GreenhouseScheduler.main(null);
-        HorseRace.main(null);
-        //Interrupting.main(null);
-        //Interrupting2.main(null);
-        //InterruptingIdiom.main(null);
-        Joining.main(null);
-        ListComparisons.main(null);
-        MainThread.main(null);
-        MapComparisons.main(null);
-        MoreBasicThreads.main(null);
-        //MultiLock.main(null);
-        NaiveExceptionHandling.main(null);
-        //NIOInterruption.main(null);
-        //NotifyVsNotifyAll.main(null);
-        //OrnamentalGarden.main(null);
-        //PipedIO.main(null);
-        //PriorityBlockingQueueDemo.main(null);
-        //ReaderWriterList.main(null);
-        Restaurant.main(null);
-        SelfManaged.main(null);
-        //SemaphoreDemo.main(null);
-        //SerialNumberChecker.main(null);
-        SettingDefaultHandler.main(null);
-        //SimpleDaemons.main(null);
-        SimpleMicroBenchmark.main(null);
-        SimplePriorities.main(null);
-        SimpleThread.main(null);
-        SingleThreadExecutor.main(null);
-        SleepingTask.main(null);
-        SynchronizationComparisons.main(null);
-        SyncObject.main(null);
-        //ThreadLocalVariableHolder.main(null);
-        ThreadVariations.main(null);
-        //ToastOMatic.main(null);
-        //RestaurantWithQueues.main(null);
-        //WaxOMatic.main(null);
-        //WaxOMatic2.main(null);
-        //Atomicity.main(null);
+        try {
+            ActiveObjectDemo.main(null);
+            AtomicIntegerTest.main(null);
+            AtomicityTest.main(null);
+            AttemptLocking.main(null);
+            BankTellerSimulation.main(null);
+            BasicThreads.main(null);
+            CachedThreadPool.main(null);
+            CallableDemo.main(null);
+            CaptureUncaughtException.main(null);
+            CarBuilder.main(null);
+            CountDownLatchDemo.main(null);
+            //CriticalSection.main(null);
+            DaemonFromFactory.main(null);
+            //Daemons.main(null);
+            //DaemonsDontRunFinally.main(null);
+            DeadlockingDiningPhilosophers.main(null);
+            DelayQueueDemo.main(null);
+            //EvenGenerator.main(null);
+            //ExceptionThread.main(null);
+            ExchangerDemo.main(null);
+            //ExplicitCriticalSection.main(null);
+            FastSimulation.main(null);
+            FixedDiningPhilosophers.main(null);
+            FixedThreadPool.main(null);
+            GreenhouseScheduler.main(null);
+            HorseRace.main(null);
+            //Interrupting.main(null);
+            Interrupting2.main(null);
+            InterruptingIdiom.main(null);
+            Joining.main(null);
+            ListComparisons.main(null);
+            MainThread.main(null);
+            MapComparisons.main(null);
+            MoreBasicThreads.main(null);
+            MultiLock.main(null);
+            //NaiveExceptionHandling.main(null);
+            NIOInterruption.main(null);
+            NotifyVsNotifyAll.main(null);
+            OrnamentalGarden.main(null);
+            PipedIO.main(null);
+            PriorityBlockingQueueDemo.main(null);
+            ReaderWriterList.main(null);
+            Restaurant.main(null);
+            SelfManaged.main(null);
+            SemaphoreDemo.main(null);
+            SerialNumberChecker.main(null);
+            SettingDefaultHandler.main(null);
+            SimpleDaemons.main(null);
+            SimpleMicroBenchmark.main(null);
+            SimplePriorities.main(null);
+            SimpleThread.main(null);
+            SingleThreadExecutor.main(null);
+            SleepingTask.main(null);
+            SynchronizationComparisons.main(null);
+            SyncObject.main(null);
+            ThreadLocalVariableHolder.main(null);
+            ThreadVariations.main(null);
+            ToastOMatic.main(null);
+            RestaurantWithQueues.main(null);
+            WaxOMatic.main(null);
+            WaxOMatic2.main(null);
+            //Atomicity.main(null);
+        } catch (Exception e) {
+            e.printStackTrace(System.out);
+        }
     }
 }

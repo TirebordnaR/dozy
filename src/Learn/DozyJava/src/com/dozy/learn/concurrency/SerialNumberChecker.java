@@ -57,11 +57,11 @@ public class SerialNumberChecker {
         for (int i = 0; i < SIZE; i++)
             exec.execute(new SerialChecker());
         // Stop after n seconds if there's an argument:
-        if (args.length > 0) {
-            TimeUnit.SECONDS.sleep(new Integer(args[0]));
+        //if (args.length > 0) {
+            TimeUnit.MILLISECONDS.sleep(new Integer(200));
             System.out.println("No duplicates detected");
-            System.exit(0);
-        }
+            //System.exit(0);
+        //}
     }
 } /*
    * Output: (Sample) Duplicate: 8468656

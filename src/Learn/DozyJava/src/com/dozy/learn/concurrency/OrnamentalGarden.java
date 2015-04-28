@@ -83,7 +83,7 @@ public class OrnamentalGarden {
         for (int i = 0; i < 5; i++)
             exec.execute(new Entrance(i));
         // Run for a while, then stop and collect the data:
-        TimeUnit.SECONDS.sleep(3);
+        TimeUnit.SECONDS.sleep(1);
         Entrance.cancel();
         exec.shutdown();
         if (!exec.awaitTermination(250, TimeUnit.MILLISECONDS))

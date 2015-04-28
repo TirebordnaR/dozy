@@ -20,7 +20,7 @@ class CheckoutTask<T> implements Runnable {
         try {
             T item = pool.checkOut();
             print(this + "checked out " + item);
-            TimeUnit.SECONDS.sleep(1);
+            TimeUnit.MILLISECONDS.sleep(300);
             print(this + "checking in " + item);
             pool.checkIn(item);
         } catch (InterruptedException e) {
@@ -60,7 +60,7 @@ public class SemaphoreDemo {
                 }
             }
         });
-        TimeUnit.SECONDS.sleep(2);
+        TimeUnit.SECONDS.sleep(1);
         blocked.cancel(true); // Break out of blocked call
         print("Checking in objects in " + list);
         for (Fat f : list)

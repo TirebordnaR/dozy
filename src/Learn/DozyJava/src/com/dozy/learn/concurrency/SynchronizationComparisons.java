@@ -85,7 +85,9 @@ class BaseLine extends Accumulator {
     }
 
     public void accumulate() {
-        value += preLoaded[index++];
+        if (index < SIZE) {
+            value += preLoaded[index++];
+        }
         if (index >= SIZE)
             index = 0;
     }
@@ -150,7 +152,9 @@ class AtomicTest extends Accumulator {
         // a time doesn't work. But it still gives us
         // a performance indicator:
         int i = index.getAndIncrement();
-        value.getAndAdd(preLoaded[i]);
+        if (i < SIZE) {
+            value.getAndAdd(preLoaded[i]);
+        }
         if (++i >= SIZE)
             index.set(0);
     }
@@ -183,8 +187,8 @@ public class SynchronizationComparisons {
 
     public static void main(String[] args) {
         int iterations = 5; // Default
-        if (args.length > 0) // Optionally change iterations
-            iterations = new Integer(args[0]);
+/*        if (args.length > 0) // Optionally change iterations
+            iterations = new Integer(args[0]);*/
         // The first time fills the thread pool:
         print("Warmup");
         baseLine.timedTest();

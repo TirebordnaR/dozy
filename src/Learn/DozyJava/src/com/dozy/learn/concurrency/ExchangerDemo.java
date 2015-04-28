@@ -58,13 +58,13 @@ class ExchangerConsumer<T> implements Runnable {
 
 public class ExchangerDemo {
     static int size = 10;
-    static int delay = 5; // Seconds
+    static int delay = 1; // Seconds
 
     public static void main(String[] args) throws Exception {
-        if (args.length > 0)
+/*        if (args.length > 0)
             size = new Integer(args[0]);
         if (args.length > 1)
-            delay = new Integer(args[1]);
+            delay = new Integer(args[1]);*/
         ExecutorService exec = Executors.newCachedThreadPool();
         Exchanger<List<Fat>> xc = new Exchanger<List<Fat>>();
         List<Fat> producerList = new CopyOnWriteArrayList<Fat>(), consumerList = new CopyOnWriteArrayList<Fat>();
