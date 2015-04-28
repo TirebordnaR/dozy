@@ -4,6 +4,7 @@ package com.dozy.learn.generics;
 // {CompileTimeError} (Won't compile)
 
 class Manipulator<T> {
+    @SuppressWarnings("unused")
     private T obj;
 
     public Manipulator(T x) {
@@ -12,7 +13,7 @@ class Manipulator<T> {
 
     // Error: cannot find symbol: method f():
     public void manipulate() {
-        obj.f();
+        // err obj.f();
     }
 }
 

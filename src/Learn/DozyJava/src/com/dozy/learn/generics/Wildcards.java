@@ -47,7 +47,8 @@ public class Wildcards {
     T t = holder.get();
     return t;
   }	
-  static <T>
+  @SuppressWarnings("unused")
+static <T>
   void wildSupertype(Holder<? super T> holder, T arg) {
     holder.set(arg);
     // T t = holder.get();  // Error:
@@ -56,7 +57,8 @@ public class Wildcards {
     // OK, but type information has been lost:
     Object obj = holder.get();
   }
-  public static void main(String[] args) {
+  @SuppressWarnings({ "unused", "rawtypes" })
+public static void main(String[] args) {
     Holder raw = new Holder<Long>();
     // Or:
     raw = new Holder();

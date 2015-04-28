@@ -4,10 +4,12 @@ package com.dozy.learn.generics;
 import java.util.*;
 
 public class UnboundedWildcards1 {
+    @SuppressWarnings("rawtypes")
     static List list1;
     static List<?> list2;
     static List<? extends Object> list3;
 
+    @SuppressWarnings("rawtypes")
     static void assign1(List list) {
         list1 = list;
         list2 = list;
@@ -27,6 +29,7 @@ public class UnboundedWildcards1 {
         list3 = list;
     }
 
+    @SuppressWarnings("rawtypes")
     public static void main(String[] args) {
         assign1(new ArrayList());
         assign2(new ArrayList());

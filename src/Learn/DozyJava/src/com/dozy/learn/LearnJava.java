@@ -42,7 +42,7 @@ public class LearnJava {
     public static void main(String[] args) {
         System.out.println("Hey java, you're good. 才怪咧！");
 
-        int i = 13;
+        int i = 14;
         switch (i) {
         case 1:
             dozyObject();
@@ -469,8 +469,8 @@ public class LearnJava {
         ExplicitTypeSpecification.main(null);
         FactoryConstraint.main(null);
         Fibonacci.main(null);
-        // Fill.main(null);
-        // Fill2.main(null);
+        FillTest.main(null);
+        Fill2Test.main(null);
         FilledListMaker.main(null);
         Functional.main(null);
         Generators.main(null);

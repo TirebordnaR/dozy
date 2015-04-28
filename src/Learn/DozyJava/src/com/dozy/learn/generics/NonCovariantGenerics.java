@@ -4,7 +4,8 @@ package com.dozy.learn.generics;
 // {CompileTimeError} (Won't compile)
 import java.util.*;
 
+@SuppressWarnings("unused")
 public class NonCovariantGenerics {
     // Compile Error: incompatible types:
-    List<Fruit> flist = new ArrayList<Apple>();
+    // err List<Fruit> flist = new ArrayList<Apple>();
 } // /:~

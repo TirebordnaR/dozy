@@ -35,6 +35,7 @@ class D {
 // Compile error: Type parameter D is not within its bound
 
 // Alas, you can do this, so you can't force the idiom:
+@SuppressWarnings("rawtypes")
 class F extends SelfBounded {
 }
 

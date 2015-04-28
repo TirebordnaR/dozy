@@ -11,7 +11,7 @@ public class CaptureConversion {
         f1(holder); // Call with captured type
     }
 
-    @SuppressWarnings("unchecked")
+    @SuppressWarnings({ "unchecked", "rawtypes" })
     public static void main(String[] args) {
         Holder raw = new Holder<Integer>(1);
         // f1(raw); // Produces warnings

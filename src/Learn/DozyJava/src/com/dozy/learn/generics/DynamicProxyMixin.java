@@ -29,7 +29,7 @@ class MixinProxy implements InvocationHandler {
         return method.invoke(delegate, args);
     }
 
-    @SuppressWarnings("unchecked")
+    @SuppressWarnings({ "unchecked", "rawtypes" })
     public static Object newInstance(TwoTuple... pairs) {
         Class[] interfaces = new Class[pairs.length];
         for (int i = 0; i < pairs.length; i++) {

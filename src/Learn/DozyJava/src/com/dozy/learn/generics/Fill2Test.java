@@ -12,7 +12,7 @@ interface Addable<T> {
     void add(T t);
 }
 
-public class Fill2 {
+class Fill2 {
     // Classtoken version:
     public static <T> void fill(Addable<T> addable,
             Class<? extends T> classToken, int size) {
@@ -61,7 +61,7 @@ class AddableSimpleQueue<T> extends SimpleQueue<T> implements Addable<T> {
     }
 }
 
-class Fill2Test {
+public class Fill2Test {
     public static void main(String[] args) {
         // Adapt a Collection:
         List<Coffee> carrier = new ArrayList<Coffee>();

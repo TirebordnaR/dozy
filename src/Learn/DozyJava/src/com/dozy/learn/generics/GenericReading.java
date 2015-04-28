@@ -12,6 +12,7 @@ public class GenericReading {
     static List<Fruit> fruit = Arrays.asList(new Fruit());
 
     // A static method adapts to each call:
+    @SuppressWarnings("unused")
     static void f1() {
         Apple a = readExact(apples);
         Fruit f = readExact(fruit);
@@ -26,6 +27,7 @@ public class GenericReading {
         }
     }
 
+    @SuppressWarnings("unused")
     static void f2() {
         Reader<Fruit> fruitReader = new Reader<Fruit>();
         Fruit f = fruitReader.readExact(fruit);

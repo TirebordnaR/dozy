@@ -16,6 +16,7 @@ class GenericBase<T> {
 class Derived1<T> extends GenericBase<T> {
 }
 
+@SuppressWarnings("rawtypes")
 class Derived2 extends GenericBase {
 } // No warning
 

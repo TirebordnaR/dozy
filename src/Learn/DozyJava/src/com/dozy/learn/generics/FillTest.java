@@ -9,7 +9,7 @@ import java.util.*;
 // no "Addable" interface so we are narrowed to using a
 // Collection. We cannot generalize using generics in
 // this case.
-public class Fill {
+class Fill {
     public static <T> void fill(Collection<T> collection,
             Class<? extends T> classToken, int size) {
         for (int i = 0; i < size; i++)
@@ -34,7 +34,8 @@ class Contract {
 class TitleTransfer extends Contract {
 }
 
-class FillTest {
+public class FillTest {
+    @SuppressWarnings("unused")
     public static void main(String[] args) {
         List<Contract> contracts = new ArrayList<Contract>();
         Fill.fill(contracts, Contract.class, 3);

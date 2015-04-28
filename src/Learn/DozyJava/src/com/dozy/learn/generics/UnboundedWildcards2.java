@@ -4,10 +4,12 @@ package com.dozy.learn.generics;
 import java.util.*;
 
 public class UnboundedWildcards2 {
+    @SuppressWarnings("rawtypes")
     static Map map1;
     static Map<?, ?> map2;
     static Map<String, ?> map3;
 
+    @SuppressWarnings("rawtypes")
     static void assign1(Map map) {
         map1 = map;
     }
@@ -20,6 +22,7 @@ public class UnboundedWildcards2 {
         map3 = map;
     }
 
+    @SuppressWarnings("rawtypes")
     public static void main(String[] args) {
         assign1(new HashMap());
         assign2(new HashMap());

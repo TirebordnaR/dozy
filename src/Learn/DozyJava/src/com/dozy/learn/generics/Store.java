@@ -55,7 +55,9 @@ class Office {
 }
 
 public class Store extends ArrayList<Aisle> {
+    @SuppressWarnings("unused")
     private ArrayList<CheckoutStand> checkouts = new ArrayList<CheckoutStand>();
+    @SuppressWarnings("unused")
     private Office office = new Office();
 
     public Store(int nAisles, int nShelves, int nProducts) {
