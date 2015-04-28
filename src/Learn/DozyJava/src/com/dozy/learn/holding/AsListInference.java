@@ -23,6 +23,7 @@ class Slush extends Snow {
 }
 
 public class AsListInference {
+    @SuppressWarnings("unused")
     public static void main(String[] args) {
         List<Snow> snow1 = Arrays.asList(new Crusty(), new Slush(),
                 new Powder());

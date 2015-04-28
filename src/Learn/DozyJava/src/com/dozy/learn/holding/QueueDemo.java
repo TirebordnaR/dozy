@@ -5,6 +5,7 @@ package com.dozy.learn.holding;
 import java.util.*;
 
 public class QueueDemo {
+    @SuppressWarnings("rawtypes")
     public static void printQ(Queue queue) {
         while (queue.peek() != null)
             System.out.print(queue.remove() + " ");

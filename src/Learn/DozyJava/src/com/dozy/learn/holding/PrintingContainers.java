@@ -6,6 +6,7 @@ import java.util.*;
 import static net.mindview.util.Print.*;
 
 public class PrintingContainers {
+    @SuppressWarnings("rawtypes")
     static Collection fill(Collection<String> collection) {
         collection.add("rat");
         collection.add("cat");
@@ -14,6 +15,7 @@ public class PrintingContainers {
         return collection;
     }
 
+    @SuppressWarnings("rawtypes")
     static Map fill(Map<String, String> map) {
         map.put("rat", "Fuzzy");
         map.put("cat", "Rags");
