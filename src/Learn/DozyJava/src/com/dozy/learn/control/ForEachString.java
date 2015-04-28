@@ -7,5 +7,5 @@ public class ForEachString {
             System.out.print(c + " ");
     }
 } /*
-   * Output: A n A f r i c a n S w a l l o w
+   * Output: A n   A f r i c a n   S w a l l o w 
    */// :~

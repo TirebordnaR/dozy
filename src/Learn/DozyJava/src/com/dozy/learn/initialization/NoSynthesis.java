@@ -10,6 +10,7 @@ class Bird2 {
 }
 
 public class NoSynthesis {
+    @SuppressWarnings("unused")
     public static void main(String[] args) {
         // ! Bird2 b = new Bird2(); // No default
         Bird2 b2 = new Bird2(1);

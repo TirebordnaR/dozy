@@ -3,6 +3,7 @@ package com.dozy.learn.initialization;
 
 class Person {
     public void eat(Apple apple) {
+        @SuppressWarnings("unused")
         Apple peeled = apple.getPeeled();
         System.out.println("Yummy");
     }
