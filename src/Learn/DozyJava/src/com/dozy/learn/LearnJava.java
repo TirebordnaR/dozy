@@ -28,6 +28,11 @@ import com.dozy.learn.generics.coffee.CoffeeGenerator;
 import com.dozy.learn.generics.decorator.Decoration;
 import com.dozy.learn.arrays.*;
 import com.dozy.learn.containers.*;
+import com.dozy.learn.io.*;
+import com.dozy.learn.enumerated.*;
+import com.dozy.learn.enumerated.cartoons.EnumImplementation;
+import com.dozy.learn.enumerated.menu.*;
+import com.dozy.learn.concurrency.*;
 
 public class LearnJava {
 
@@ -37,7 +42,7 @@ public class LearnJava {
     public static void main(String[] args) {
         System.out.println("Hey java, you're good. 才怪咧！");
 
-        int i = 16;
+        int i = 19;
         switch (i) {
         case 1:
             dozyObject();
@@ -86,6 +91,15 @@ public class LearnJava {
             break;
         case 16:
             dozyContainers();
+            break;
+        case 17:
+            dozyIo();
+            break;
+        case 18:
+            dozyEnumerated();
+            break;
+        case 19:
+            dozyConcurrency();
             break;
         default:
             break;
@@ -143,7 +157,7 @@ public class LearnJava {
         ArraysOfPrimitives.main(null);
         AutoboxingVarargs.main(null);
         BananaPeel.main(null);
-        Burrito.main(null);
+        com.dozy.learn.initialization.Burrito.main(null);
         DefaultConstructor.main(null);
         Demotion.main(null);
         DynamicArray.main(null);
@@ -202,7 +216,7 @@ public class LearnJava {
         Jurassic.main(null);
         Orc.main(null);
         PlaceSetting.main(null);
-        SpaceShip.main(null);
+        com.dozy.learn.reusing.SpaceShip.main(null);
         SpaceShipDelegation.main(null);
         SprinklerSystem.main(null);
         Wind.main(null);
@@ -247,12 +261,12 @@ public class LearnJava {
         BigEgg.main(null);
         BigEgg2.main(null);
         Callbacks.main(null);
-        //ClassInInterface.main(null);
+        // ClassInInterface.main(null);
         DotNew.main(null);
         DotThis.main(null);
         Factories.main(null);
         Games.main(null);
-        //GreenhouseController.main(null);
+        // GreenhouseController.main(null);
         InheritInner.main(null);
         LocalInnerClass.main(null);
         MultiImplementation.main(null);
@@ -327,9 +341,9 @@ public class LearnJava {
         LoggingExceptions.main(null);
         LoggingExceptions2.main(null);
         LostMessage.main(null);
-        //MainException.main(null);
+        // MainException.main(null);
         MultipleReturns.main(null);
-        //NeverCaught.main(null);
+        // NeverCaught.main(null);
         OnOffSwitch.main(null);
         Rethrowing.main(null);
         RethrowNew.main(null);
@@ -349,38 +363,38 @@ public class LearnJava {
         Groups.main(null);
         Immutable.main(null);
         IntegerMatch.main(null);
-        //JGrep.main(null);
+        // JGrep.main(null);
         Receipt.main(null);
         ReFlags.main(null);
         Replacing.main(null);
         ReplacingStringTokenizer.main(null);
-        //Resetting.main(null);
+        // Resetting.main(null);
         Rudolph.main(null);
         ScannerDelimiter.main(null);
         SimpleFormat.main(null);
-        //SimpleRead.main(null);
+        // SimpleRead.main(null);
         SplitDemo.main(null);
         Splitting.main(null);
         StartEnd.main(null);
-        //TestRegularExpression.main(null);
-        //TheReplacements.main(null);
+        // TestRegularExpression.main(null);
+        // TheReplacements.main(null);
         ThreatAnalyzer.main(null);
         Turtle.main(null);
         UsingStringBuilder.main(null);
     }
 
     private static void dozyTypeinfo() {
-        //AnonymousImplementation.main(null);
+        // AnonymousImplementation.main(null);
         BoundedClassReferences.main(null);
         ClassCasts.main(null);
-        //ClassInitialization.main(null);
+        // ClassInitialization.main(null);
         FamilyVsExactType.main(null);
         FilledList.main(null);
         GenericClassReferences.main(null);
-        //HiddenImplementation.main(null);
-        //InnerImplementation.main(null);
+        // HiddenImplementation.main(null);
+        // InnerImplementation.main(null);
         InterfaceViolation.main(null);
-        //ModifyingPrivateFields.main(null);
+        // ModifyingPrivateFields.main(null);
         NullRobot.main(null);
         PetCount.main(null);
         PetCount2.main(null);
@@ -389,7 +403,7 @@ public class LearnJava {
         RegisteredFactories.main(null);
         SelectingMethods.main(null);
         com.dozy.learn.typeinfo.Shapes.main(null);
-        //ShowMethods.main(null);
+        // ShowMethods.main(null);
         SimpleDynamicProxy.main(null);
         SimpleProxyDemo.main(null);
         SnowRemovalRobot.main(null);
@@ -397,10 +411,10 @@ public class LearnJava {
         SweetShop.main(null);
         WildcardClassReferences.main(null);
         LiteralPetCreator.main(null);
-        //GenericToyTest.main(null);
+        // GenericToyTest.main(null);
         ToyTest.main(null);
     }
-    
+
     private static void dozyGenerics() {
         Apply.main(null);
         ArrayMaker.main(null);
@@ -409,7 +423,7 @@ public class LearnJava {
         BasicBounds.main(null);
         BasicGeneratorDemo.main(null);
         CaptureConversion.main(null);
-        //CheckedList.main(null);
+        // CheckedList.main(null);
         ClassTypeCapture.main(null);
         CompilerIntelligence.main(null);
         CovariantArrays.main(null);
@@ -423,8 +437,8 @@ public class LearnJava {
         ExplicitTypeSpecification.main(null);
         FactoryConstraint.main(null);
         Fibonacci.main(null);
-        //Fill.main(null);
-        //Fill2.main(null);
+        // Fill.main(null);
+        // Fill2.main(null);
         FilledListMaker.main(null);
         Functional.main(null);
         Generators.main(null);
@@ -473,7 +487,7 @@ public class LearnJava {
         CoffeeGenerator.main(null);
         Decoration.main(null);
     }
-    
+
     private static void dozyArray() {
         AlphabeticSearch.main(null);
         ArrayOfGenerics.main(null);
@@ -502,11 +516,11 @@ public class LearnJava {
         TestGenerated.main(null);
         ThreeDWithNew.main(null);
     }
-    
+
     private static void dozyContainers() {
         AssociativeArray.main(null);
         Bits.main(null);
-        //CanonicalMapping.main(null);
+        // CanonicalMapping.main(null);
         CollectionDataGeneration.main(null);
         CollectionDataTest.main(null);
         CollectionMethods.main(null);
@@ -517,22 +531,22 @@ public class LearnJava {
         FillingLists.main(null);
         IndividualTest.main(null);
         LinkedHashMapDemo.main(null);
-        //ListPerformance.main(null);
+        // ListPerformance.main(null);
         Lists.main(null);
         ListSortSearch.main(null);
         MapDataTest.main(null);
-        //MapPerformance.main(null);
+        // MapPerformance.main(null);
         Maps.main(null);
         QueueBehavior.main(null);
         ReadOnly.main(null);
-        //References.main(null);
-        //SetPerformance.main(null);
+        // References.main(null);
+        // SetPerformance.main(null);
         SimpleHashMap.main(null);
         SlowMap.main(null);
         SortedMapDemo.main(null);
         SortedSetDemo.main(null);
-        //SpringDetector.main(null);
-        //SpringDetector2.main(null);
+        // SpringDetector.main(null);
+        // SpringDetector2.main(null);
         Stacks.main(null);
         StringHashCode.main(null);
         Synchronization.main(null);
@@ -540,5 +554,145 @@ public class LearnJava {
         TypesForSets.main(null);
         Unsupported.main(null);
         Utilities.main(null);
+    }
+
+    private static void dozyIo() {
+        AvailableCharSets.main(null);
+        // BasicFileOutput.main(null);
+        // Blip3.main(null);
+        // Blips.main(null);
+        // BufferedInputFile.main(null);
+        // BufferToText.main(null);
+        ChangeSystemOut.main(null);
+        // ChannelCopy.main(null);
+        DirectoryDemo.main(null);
+        // DirList.main(null);
+        // DirList2.main(null);
+        // DirList3.main(null);
+        Endians.main(null);
+        // FileLocking.main(null);
+        // FileOutputShortcut.main(null);
+        // FormattedMemoryInput.main(null);
+        // FreezeAlien.main(null);
+        // GetChannel.main(null);
+        GetData.main(null);
+        // GZIPcompress.main(null);
+        IntBufferDemo.main(null);
+        // Logon.main(null);
+        // MakeDirectories.main(null);
+        MappedIO.main(null);
+        // MemoryInput.main(null);
+        // MyWorld.main(null);
+        // OSExecuteDemo.main(null);
+        // PreferencesDemo.main(null);
+        // RecoverCADState.main(null);
+        // Redirecting.main(null);
+        // SerialCtl.main(null);
+        // StoreCADState.main(null);
+        // StoringAndRecoveringData.main(null);
+        // TestEOF.main(null);
+        // TransferTo.main(null);
+        UsingBuffers.main(null);
+        // UsingRandomAccessFile.main(null);
+        ViewBuffers.main(null);
+        // Worm.main(null);
+        // ZipCompress.main(null);
+    }
+
+    private static void dozyEnumerated() {
+        BigEnumSet.main(null);
+        com.dozy.learn.enumerated.Burrito.main(null);
+        CarWash.main(null);
+        ConstantSpecificMethod.main(null);
+        EnumClass.main(null);
+        //EnumMaps.main(null);
+        //EnumSets.main(null);
+        NonEnum.main(null);
+        OverrideConstantSpecific.main(null);
+        OzWitch.main(null);
+        PostOffice.main(null);
+        RandomTest.main(null);
+        //Reflection.main(null);
+        RoShamBo1.main(null);
+        RoShamBo2.main(null);
+        RoShamBo3.main(null);
+        RoShamBo4.main(null);
+        RoShamBo5.main(null);
+        RoShamBo6.main(null);
+        SecurityCategory.main(null);
+        com.dozy.learn.enumerated.SpaceShip.main(null);
+        TrafficLight.main(null);
+        UpcastEnum.main(null);
+        //VendingMachine.main(null);
+        EnumImplementation.main(null);
+        //Meal.main(null);
+        Meal2.main(null);
+        TypeOfFood.main(null);
+        //NotClasses.main(null);
+    }
+
+    private static void dozyConcurrency() {
+        ActiveObjectDemo.main(null);
+        AtomicIntegerTest.main(null);
+        AtomicityTest.main(null);
+        AttemptLocking.main(null);
+        //BankTellerSimulation.main(null);
+        BasicThreads.main(null);
+        CachedThreadPool.main(null);
+        CallableDemo.main(null);
+        CaptureUncaughtException.main(null);
+        //CarBuilder.main(null);
+        //CountDownLatchDemo.main(null);
+        CriticalSection.main(null);
+        //DaemonFromFactory.main(null);
+        //Daemons.main(null);
+        //DaemonsDontRunFinally.main(null);
+        //DeadlockingDiningPhilosophers.main(null);
+        DelayQueueDemo.main(null);
+        EvenGenerator.main(null);
+        ExceptionThread.main(null);
+        //ExchangerDemo.main(null);
+        //ExplicitCriticalSection.main(null);
+        //FastSimulation.main(null);
+        //FixedDiningPhilosophers.main(null);
+        FixedThreadPool.main(null);
+        GreenhouseScheduler.main(null);
+        HorseRace.main(null);
+        //Interrupting.main(null);
+        //Interrupting2.main(null);
+        //InterruptingIdiom.main(null);
+        Joining.main(null);
+        ListComparisons.main(null);
+        MainThread.main(null);
+        MapComparisons.main(null);
+        MoreBasicThreads.main(null);
+        //MultiLock.main(null);
+        NaiveExceptionHandling.main(null);
+        //NIOInterruption.main(null);
+        //NotifyVsNotifyAll.main(null);
+        //OrnamentalGarden.main(null);
+        //PipedIO.main(null);
+        //PriorityBlockingQueueDemo.main(null);
+        //ReaderWriterList.main(null);
+        Restaurant.main(null);
+        SelfManaged.main(null);
+        //SemaphoreDemo.main(null);
+        //SerialNumberChecker.main(null);
+        SettingDefaultHandler.main(null);
+        //SimpleDaemons.main(null);
+        SimpleMicroBenchmark.main(null);
+        SimplePriorities.main(null);
+        SimpleThread.main(null);
+        SingleThreadExecutor.main(null);
+        SleepingTask.main(null);
+        SynchronizationComparisons.main(null);
+        SyncObject.main(null);
+        //ThreadLocalVariableHolder.main(null);
+        ThreadVariations.main(null);
+        //ToastOMatic.main(null);
+        //RestaurantWithQueues.main(null);
+        //WaxOMatic.main(null);
+        //WaxOMatic2.main(null);
+        //Atomicity.main(null);
     }
 }
