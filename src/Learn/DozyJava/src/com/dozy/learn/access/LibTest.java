@@ -5,6 +5,7 @@ package com.dozy.learn.access;
 import net.mindview.simple.*;
 
 public class LibTest {
+    @SuppressWarnings("unused")
     public static void main(String[] args) {
         Vector v = new Vector();
         List l = new List();

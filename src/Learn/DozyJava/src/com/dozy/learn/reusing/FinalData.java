@@ -22,15 +22,19 @@ public class FinalData {
     }
 
     // Can be compile-time constants:
+    @SuppressWarnings("unused")
     private final int valueOne = 9;
+    @SuppressWarnings("unused")
     private static final int VALUE_TWO = 99;
     // Typical public constant:
     public static final int VALUE_THREE = 39;
     // Cannot be compile-time constants:
     private final int i4 = rand.nextInt(20);
     static final int INT_5 = rand.nextInt(20);
+    @SuppressWarnings("unused")
     private Value v1 = new Value(11);
     private final Value v2 = new Value(22);
+    @SuppressWarnings("unused")
     private static final Value VAL_3 = new Value(33);
     // Arrays:
     private final int[] a = { 1, 2, 3, 4, 5, 6 };

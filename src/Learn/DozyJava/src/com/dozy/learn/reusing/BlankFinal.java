@@ -4,6 +4,7 @@ package com.dozy.learn.reusing;
 // "Blank" final fields.
 
 class Poppet {
+    @SuppressWarnings("unused")
     private int i;
 
     Poppet(int ii) {
@@ -12,8 +13,11 @@ class Poppet {
 }
 
 public class BlankFinal {
+    @SuppressWarnings("unused")
     private final int i = 0; // Initialized final
+    @SuppressWarnings("unused")
     private final int j; // Blank final
+    @SuppressWarnings("unused")
     private final Poppet p; // Blank final reference
 
     // Blank finals MUST be initialized in the constructor:

@@ -15,6 +15,7 @@ class Sundae {
 public class IceCream {
     public static void main(String[] args) {
         // ! Sundae x = new Sundae();
+        @SuppressWarnings("unused")
         Sundae x = Sundae.makeASundae();
     }
 } // /:~

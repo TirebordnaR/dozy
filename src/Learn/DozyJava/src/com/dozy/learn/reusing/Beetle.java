@@ -13,6 +13,7 @@ class Insect {
         j = 39;
     }
 
+    @SuppressWarnings("unused")
     private static int x1 = printInit("static Insect.x1 initialized");
 
     static int printInit(String s) {
@@ -29,10 +30,12 @@ public class Beetle extends Insect {
         print("j = " + j);
     }
 
+    @SuppressWarnings("unused")
     private static int x2 = printInit("static Beetle.x2 initialized");
 
     public static void main(String[] args) {
         print("Beetle constructor");
+        @SuppressWarnings("unused")
         Beetle b = new Beetle();
     }
 } /* Output:

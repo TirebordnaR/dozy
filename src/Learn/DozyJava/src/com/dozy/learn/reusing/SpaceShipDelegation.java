@@ -2,6 +2,7 @@
 package com.dozy.learn.reusing;
 
 public class SpaceShipDelegation {
+    @SuppressWarnings("unused")
     private String name;
     private SpaceShipControls controls = new SpaceShipControls();
 

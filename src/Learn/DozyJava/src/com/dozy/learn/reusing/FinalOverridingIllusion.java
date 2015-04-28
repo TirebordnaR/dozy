@@ -7,21 +7,25 @@ import static net.mindview.util.Print.*;
 
 class WithFinals {
     // Identical to "private" alone:
+    @SuppressWarnings("unused")
     private final void f() {
         print("WithFinals.f()");
     }
 
     // Also automatically "final":
+    @SuppressWarnings("unused")
     private void g() {
         print("WithFinals.g()");
     }
 }
 
 class OverridingPrivate extends WithFinals {
+    @SuppressWarnings("unused")
     private final void f() {
         print("OverridingPrivate.f()");
     }
 
+    @SuppressWarnings("unused")
     private void g() {
         print("OverridingPrivate.g()");
     }
@@ -38,6 +42,7 @@ class OverridingPrivate2 extends OverridingPrivate {
 }
 
 public class FinalOverridingIllusion {
+    @SuppressWarnings("unused")
     public static void main(String[] args) {
         OverridingPrivate2 op2 = new OverridingPrivate2();
         op2.f();

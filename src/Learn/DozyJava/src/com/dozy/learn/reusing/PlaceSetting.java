@@ -52,9 +52,13 @@ class Custom {
 }
 
 public class PlaceSetting extends Custom {
+    @SuppressWarnings("unused")
     private Spoon sp;
+    @SuppressWarnings("unused")
     private Fork frk;
+    @SuppressWarnings("unused")
     private Knife kn;
+    @SuppressWarnings("unused")
     private DinnerPlate pl;
 
     public PlaceSetting(int i) {
@@ -67,6 +71,7 @@ public class PlaceSetting extends Custom {
     }
 
     public static void main(String[] args) {
+        @SuppressWarnings("unused")
         PlaceSetting x = new PlaceSetting(9);
     }
 } /* Output:

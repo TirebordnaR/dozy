@@ -38,6 +38,7 @@ public class Lunch {
     }
 
     void testStatic() {
+        @SuppressWarnings("unused")
         Soup1 soup = Soup1.makeSoup();
     }
 

@@ -22,6 +22,7 @@ public class Cartoon extends Drawing {
     }
 
     public static void main(String[] args) {
+        @SuppressWarnings("unused")
         Cartoon x = new Cartoon();
     }
 } /* Output:

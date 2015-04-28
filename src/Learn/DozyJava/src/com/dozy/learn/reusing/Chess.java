@@ -24,6 +24,7 @@ public class Chess extends BoardGame {
     }
 
     public static void main(String[] args) {
+        @SuppressWarnings("unused")
         Chess x = new Chess();
     }
 } /* Output:
