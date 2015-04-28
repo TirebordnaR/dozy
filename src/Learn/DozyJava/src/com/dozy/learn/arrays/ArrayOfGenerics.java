@@ -5,7 +5,7 @@ package com.dozy.learn.arrays;
 import java.util.*;
 
 public class ArrayOfGenerics {
-    @SuppressWarnings("unchecked")
+    @SuppressWarnings({ "unchecked", "rawtypes" })
     public static void main(String[] args) {
         List<String>[] ls;
         List[] la = new List[10];

@@ -42,7 +42,7 @@ public class LearnJava {
     public static void main(String[] args) {
         System.out.println("Hey java, you're good. 才怪咧！");
 
-        int i = 14;
+        int i = 15;
         switch (i) {
         case 1:
             dozyObject();
@@ -455,7 +455,7 @@ public class LearnJava {
         BasicBounds.main(null);
         BasicGeneratorDemo.main(null);
         CaptureConversion.main(null);
-        // CheckedList.main(null);
+        CheckedList.main(null);
         ClassTypeCapture.main(null);
         CompilerIntelligence.main(null);
         CovariantArrays.main(null);

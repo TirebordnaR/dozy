@@ -6,7 +6,7 @@ import com.dozy.learn.typeinfo.pets.*;
 import java.util.*;
 
 public class CheckedList {
-    @SuppressWarnings("unchecked")
+    @SuppressWarnings({ "unchecked", "rawtypes" })
     static void oldStyleMethod(List probablyDogs) {
         probablyDogs.add(new Cat());
     }
