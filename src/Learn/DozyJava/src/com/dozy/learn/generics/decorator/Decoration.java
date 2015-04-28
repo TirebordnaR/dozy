@@ -58,6 +58,7 @@ class SerialNumbered extends Decorator {
 }
 
 public class Decoration {
+    @SuppressWarnings("unused")
     public static void main(String[] args) {
         TimeStamped t = new TimeStamped(new Basic());
         TimeStamped t2 = new TimeStamped(new SerialNumbered(new Basic()));

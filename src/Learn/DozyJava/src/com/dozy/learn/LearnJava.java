@@ -1,6 +1,5 @@
 package com.dozy.learn;
 
-import static net.mindview.util.Print.*;
 import com.dozy.learn.object.*;
 import com.dozy.learn.operators.*;
 import com.dozy.learn.control.*;
@@ -43,7 +42,7 @@ public class LearnJava {
     public static void main(String[] args) {
         System.out.println("Hey java, you're good. 才怪咧！");
 
-        int i = 17;
+        int i = 18;
         switch (i) {
         case 1:
             dozyObject();
@@ -645,8 +644,8 @@ public class LearnJava {
         CarWash.main(null);
         ConstantSpecificMethod.main(null);
         EnumClass.main(null);
-        //EnumMaps.main(null);
-        //EnumSets.main(null);
+        EnumMaps.main(null);
+        EnumSets.main(null);
         NonEnum.main(null);
         OverrideConstantSpecific.main(null);
         OzWitch.main(null);
@@ -663,9 +662,9 @@ public class LearnJava {
         com.dozy.learn.enumerated.SpaceShip.main(null);
         TrafficLight.main(null);
         UpcastEnum.main(null);
-        //VendingMachine.main(null);
+        VendingMachine.main(null);
         EnumImplementation.main(null);
-        //Meal.main(null);
+        Meal.main(null);
         Meal2.main(null);
         TypeOfFood.main(null);
         //NotClasses.main(null);

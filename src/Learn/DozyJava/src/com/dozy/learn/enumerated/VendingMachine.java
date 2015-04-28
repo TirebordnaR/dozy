@@ -1,6 +1,6 @@
 //: enumerated/VendingMachine.java
-// {Args: VendingMachineInput.txt}
 package com.dozy.learn.enumerated;
+// {Args: VendingMachineInput.txt}
 
 import java.util.*;
 import net.mindview.util.*;
@@ -130,8 +130,8 @@ public class VendingMachine {
 
     public static void main(String[] args) {
         Generator<Input> gen = new RandomInputGenerator();
-        if (args.length == 1)
-            gen = new FileInputGenerator(args[0]);
+        //if (args.length == 1)
+            gen = new FileInputGenerator(/*args[0]*/"src\\com\\dozy\\learn\\enumerated\\VendingMachineInput.txt");
         run(gen);
     }
 }

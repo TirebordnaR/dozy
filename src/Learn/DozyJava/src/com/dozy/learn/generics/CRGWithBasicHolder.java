@@ -5,6 +5,7 @@ class Subtype extends BasicHolder<Subtype> {
 }
 
 public class CRGWithBasicHolder {
+    @SuppressWarnings("unused")
     public static void main(String[] args) {
         Subtype st1 = new Subtype(), st2 = new Subtype();
         st1.set(st2);

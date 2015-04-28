@@ -8,6 +8,7 @@ enum Search {
 }
 
 public class UpcastEnum {
+    @SuppressWarnings({ "rawtypes", "unused" })
     public static void main(String[] args) {
         Search[] vals = Search.values();
         Enum e = Search.HITHER; // Upcast

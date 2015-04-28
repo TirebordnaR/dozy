@@ -22,6 +22,7 @@ public class GenericArray<T> {
         return array;
     }
 
+    @SuppressWarnings("unused")
     public static void main(String[] args) {
         GenericArray<Integer> gai = new GenericArray<Integer>(10);
         // This causes a ClassCastException:

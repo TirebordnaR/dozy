@@ -3,7 +3,7 @@
 package com.dozy.learn.enumerated;
 
 import java.util.*;
-import static enumerated.AlarmPoints.*;
+import static com.dozy.learn.enumerated.AlarmPoints.*;
 import static net.mindview.util.Print.*;
 
 public class EnumSets {
