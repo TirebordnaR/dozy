@@ -9,6 +9,7 @@ interface Setter extends SelfBoundSetter<Setter> {
 }
 
 public class SelfBoundingAndCovariantArguments {
+    @SuppressWarnings("rawtypes")
     void testA(Setter s1, Setter s2, SelfBoundSetter sbs) {
         s1.set(s2);
         // s1.set(sbs); // Error:

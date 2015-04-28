@@ -83,6 +83,7 @@ public class EpicBattle {
         hero.getPower().trackBySmell();
     }
 
+    @SuppressWarnings("unused")
     public static void main(String[] args) {
         DogBoy dogBoy = new DogBoy();
         useSuperHearing(dogBoy);

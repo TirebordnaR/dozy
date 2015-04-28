@@ -8,6 +8,7 @@ public class ListMaker<T> {
         return new ArrayList<T>();
     }
 
+    @SuppressWarnings("unused")
     public static void main(String[] args) {
         ListMaker<String> stringMaker = new ListMaker<String>();
         List<String> stringList = stringMaker.create();

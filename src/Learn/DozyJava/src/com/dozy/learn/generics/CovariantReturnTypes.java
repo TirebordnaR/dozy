@@ -17,6 +17,7 @@ interface DerivedGetter extends OrdinaryGetter {
 }
 
 public class CovariantReturnTypes {
+    @SuppressWarnings("unused")
     void test(DerivedGetter d) {
         Derived d2 = d.get();
     }

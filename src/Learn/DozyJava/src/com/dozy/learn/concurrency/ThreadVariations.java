@@ -7,7 +7,8 @@ import static net.mindview.util.Print.*;
 // Using a named inner class:
 class InnerThread1 {
   private int countDown = 5;
-  private Inner inner;
+  @SuppressWarnings("unused")
+private Inner inner;
   private class Inner extends Thread {
     Inner(String name) {
       super(name);
@@ -61,7 +62,8 @@ class InnerThread2 {
 // Using a named Runnable implementation:
 class InnerRunnable1 {
   private int countDown = 5;
-  private Inner inner;
+  @SuppressWarnings("unused")
+private Inner inner;
   private class Inner implements Runnable {
     Thread t;
     Inner(String name) {

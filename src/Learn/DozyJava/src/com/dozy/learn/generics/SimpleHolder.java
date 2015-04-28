@@ -12,6 +12,7 @@ public class SimpleHolder {
         return obj;
     }
 
+    @SuppressWarnings("unused")
     public static void main(String[] args) {
         SimpleHolder holder = new SimpleHolder();
         holder.set("Item");

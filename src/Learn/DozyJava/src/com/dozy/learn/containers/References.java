@@ -7,6 +7,7 @@ import java.util.*;
 
 class VeryBig {
     private static final int SIZE = 10000;
+    @SuppressWarnings("unused")
     private long[] la = new long[SIZE];
     private String ident;
 

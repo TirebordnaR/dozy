@@ -7,6 +7,7 @@ import net.mindview.util.*;
 import static net.mindview.util.Print.*;
 
 public class CollectionMethods {
+    @SuppressWarnings("unused")
     public static void main(String[] args) {
         Collection<String> c = new ArrayList<String>();
         c.addAll(Countries.names(6));

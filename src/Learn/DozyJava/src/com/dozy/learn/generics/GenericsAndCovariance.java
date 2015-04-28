@@ -4,6 +4,7 @@ package com.dozy.learn.generics;
 import java.util.*;
 
 public class GenericsAndCovariance {
+    @SuppressWarnings("unused")
     public static void main(String[] args) {
         // Wildcards allow covariance:
         List<? extends Fruit> flist = new ArrayList<Apple>();

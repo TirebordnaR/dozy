@@ -686,31 +686,31 @@ public class LearnJava {
             CaptureUncaughtException.main(null);
             CarBuilder.main(null);
             CountDownLatchDemo.main(null);
-            //CriticalSection.main(null);
+            // CriticalSection.main(null);
             DaemonFromFactory.main(null);
-            //Daemons.main(null);
-            //DaemonsDontRunFinally.main(null);
+            // Daemons.main(null);
+            // DaemonsDontRunFinally.main(null);
             DeadlockingDiningPhilosophers.main(null);
             DelayQueueDemo.main(null);
-            //EvenGenerator.main(null);
-            //ExceptionThread.main(null);
+            // EvenGenerator.main(null);
+            // ExceptionThread.main(null);
             ExchangerDemo.main(null);
-            //ExplicitCriticalSection.main(null);
+            // ExplicitCriticalSection.main(null);
             FastSimulation.main(null);
             FixedDiningPhilosophers.main(null);
             FixedThreadPool.main(null);
             GreenhouseScheduler.main(null);
             HorseRace.main(null);
-            //Interrupting.main(null);
+            // Interrupting.main(null);
             Interrupting2.main(null);
             InterruptingIdiom.main(null);
             Joining.main(null);
             ListComparisons.main(null);
             MainThread.main(null);
-            //MapComparisons.main(null);
+            // MapComparisons.main(null);
             MoreBasicThreads.main(null);
             MultiLock.main(null);
-            //NaiveExceptionHandling.main(null);
+            // NaiveExceptionHandling.main(null);
             NIOInterruption.main(null);
             NotifyVsNotifyAll.main(null);
             OrnamentalGarden.main(null);
@@ -723,7 +723,7 @@ public class LearnJava {
             SerialNumberChecker.main(null);
             SettingDefaultHandler.main(null);
             SimpleDaemons.main(null);
-            SimpleMicroBenchmark.main(null);
+            //SimpleMicroBenchmark.main(null);
             SimplePriorities.main(null);
             SimpleThread.main(null);
             SingleThreadExecutor.main(null);
@@ -736,7 +736,7 @@ public class LearnJava {
             RestaurantWithQueues.main(null);
             WaxOMatic.main(null);
             WaxOMatic2.main(null);
-            //Atomicity.main(null);
+            // Atomicity.main(null);
         } catch (Exception e) {
             e.printStackTrace(System.out);
         }

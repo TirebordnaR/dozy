@@ -5,6 +5,7 @@ package com.dozy.learn.containers;
 import java.util.*;
 
 public class FailFast {
+    @SuppressWarnings("unused")
     public static void main(String[] args) {
         Collection<String> c = new ArrayList<String>();
         Iterator<String> it = c.iterator();

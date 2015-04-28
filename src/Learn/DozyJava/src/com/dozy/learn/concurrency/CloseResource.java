@@ -10,6 +10,7 @@ import java.io.*;
 import static net.mindview.util.Print.*;
 
 public class CloseResource {
+    @SuppressWarnings({ "resource", "unused" })
     public static void main(String[] args) throws Exception {
         ExecutorService exec = Executors.newCachedThreadPool();
         ServerSocket server = new ServerSocket(8080);

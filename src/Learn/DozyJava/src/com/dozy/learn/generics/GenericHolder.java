@@ -12,6 +12,7 @@ public class GenericHolder<T> {
         return obj;
     }
 
+    @SuppressWarnings("unused")
     public static void main(String[] args) {
         GenericHolder<String> holder = new GenericHolder<String>();
         holder.set("Item");

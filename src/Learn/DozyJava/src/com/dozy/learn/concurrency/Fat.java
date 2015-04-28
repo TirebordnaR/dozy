@@ -4,6 +4,7 @@ package com.dozy.learn.concurrency;
 // Objects that are expensive to create.
 
 public class Fat {
+    @SuppressWarnings("unused")
     private volatile double d; // Prevent optimization
     private static int counter = 0;
     private final int id = counter++;

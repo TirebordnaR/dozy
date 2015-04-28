@@ -6,6 +6,7 @@ public class SelfBoundingMethods {
         return arg.set(arg).get();
     }
 
+    @SuppressWarnings("unused")
     public static void main(String[] args) {
         A a = f(new A());
     }

@@ -16,6 +16,7 @@ public class Holder3<T> {
         return a;
     }
 
+    @SuppressWarnings("unused")
     public static void main(String[] args) {
         Holder3<Automobile> h3 = new Holder3<Automobile>(new Automobile());
         Automobile a = h3.get(); // No cast needed

@@ -45,6 +45,7 @@ abstract class Accumulator {
     }
 
     private class Reader implements Runnable {
+        @SuppressWarnings("unused")
         private volatile long value;
 
         public void run() {
@@ -103,7 +104,9 @@ class SynchronizedTest extends Accumulator {
     }
 
     public synchronized void accumulate() {
-        value += preLoaded[index++];
+        if (index < SIZE) {
+            value += preLoaded[index++];
+        }
         if (index >= SIZE)
             index = 0;
     }
@@ -122,7 +125,9 @@ class LockTest extends Accumulator {
     public void accumulate() {
         lock.lock();
         try {
-            value += preLoaded[index++];
+            if (index < SIZE) {
+                value += preLoaded[index++];
+            }
             if (index >= SIZE)
                 index = 0;
         } finally {
