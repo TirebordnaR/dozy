@@ -56,6 +56,7 @@ public class Tester<C> {
         new Tester<C>(cntnr, tests, paramList).timedTest();
     }
 
+    @SuppressWarnings("rawtypes")
     private void displayHeader() {
         // Calculate width and pad with '-':
         int width = fieldWidth * tests.size() + sizeWidth;

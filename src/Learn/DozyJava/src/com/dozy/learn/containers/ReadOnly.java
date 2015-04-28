@@ -9,6 +9,7 @@ import static net.mindview.util.Print.*;
 public class ReadOnly {
     static Collection<String> data = new ArrayList<String>(Countries.names(6));
 
+    @SuppressWarnings("unused")
     public static void main(String[] args) {
         Collection<String> c = Collections
                 .unmodifiableCollection(new ArrayList<String>(data));

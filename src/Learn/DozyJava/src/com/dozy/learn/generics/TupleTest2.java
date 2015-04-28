@@ -9,6 +9,7 @@ public class TupleTest2 {
         return tuple("hi", 47);
     }
 
+    @SuppressWarnings("rawtypes")
     static TwoTuple f2() {
         return tuple("hi", 47);
     }

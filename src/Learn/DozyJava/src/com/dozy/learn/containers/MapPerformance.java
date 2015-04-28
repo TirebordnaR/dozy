@@ -31,6 +31,7 @@ public class MapPerformance {
             }
         });
         tests.add(new Test<Map<Integer, Integer>>("iterate") {
+            @SuppressWarnings("rawtypes")
             int test(Map<Integer, Integer> map, TestParam tp) {
                 int loops = tp.loops * 10;
                 for (int i = 0; i < loops; i++) {
@@ -44,8 +45,8 @@ public class MapPerformance {
     }
 
     public static void main(String[] args) {
-        if (args.length > 0)
-            Tester.defaultParams = TestParam.array(args);
+/*        if (args.length > 0)
+            Tester.defaultParams = TestParam.array(args);*/
         Tester.run(new TreeMap<Integer, Integer>(), tests);
         Tester.run(new HashMap<Integer, Integer>(), tests);
         Tester.run(new LinkedHashMap<Integer, Integer>(), tests);

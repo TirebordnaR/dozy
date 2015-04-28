@@ -32,11 +32,12 @@ public class References {
             System.out.println("In queue: " + inq.get());
     }
 
+    @SuppressWarnings("unused")
     public static void main(String[] args) {
         int size = 10;
         // Or, choose size via the command line:
-        if (args.length > 0)
-            size = new Integer(args[0]);
+/*        if (args.length > 0)
+            size = new Integer(args[0]);*/
         LinkedList<SoftReference<VeryBig>> sa = new LinkedList<SoftReference<VeryBig>>();
         for (int i = 0; i < size; i++) {
             sa.add(new SoftReference<VeryBig>(new VeryBig("Soft " + i), rq));

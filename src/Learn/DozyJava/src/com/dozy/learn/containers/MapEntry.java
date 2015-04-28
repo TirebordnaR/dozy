@@ -32,6 +32,7 @@ public class MapEntry<K, V> implements Map.Entry<K, V> {
                 ^ (value == null ? 0 : value.hashCode());
     }
 
+    @SuppressWarnings("rawtypes")
     public boolean equals(Object o) {
         if (!(o instanceof MapEntry))
             return false;

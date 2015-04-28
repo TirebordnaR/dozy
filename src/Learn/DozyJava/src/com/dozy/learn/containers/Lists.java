@@ -6,11 +6,16 @@ import net.mindview.util.*;
 import static net.mindview.util.Print.*;
 
 public class Lists {
-  private static boolean b;
-  private static String s;
-  private static int i;
-  private static Iterator<String> it;
-  private static ListIterator<String> lit;
+    @SuppressWarnings("unused")
+    private static boolean b;
+    @SuppressWarnings("unused")
+    private static String s;
+    @SuppressWarnings("unused")
+    private static int i;
+    @SuppressWarnings("unused")
+    private static Iterator<String> it;
+    @SuppressWarnings("unused")
+    private static ListIterator<String> lit;
 
     public static void basicTest(List<String> a) {
         a.add(1, "x"); // Add at location 1

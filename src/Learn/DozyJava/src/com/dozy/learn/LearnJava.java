@@ -42,7 +42,7 @@ public class LearnJava {
     public static void main(String[] args) {
         System.out.println("Hey java, you're good. 才怪咧！");
 
-        int i = 15;
+        int i = 16;
         switch (i) {
         case 1:
             dozyObject();
@@ -552,7 +552,7 @@ public class LearnJava {
     private static void dozyContainers() {
         AssociativeArray.main(null);
         Bits.main(null);
-        // CanonicalMapping.main(null);
+        CanonicalMapping.main(null);
         CollectionDataGeneration.main(null);
         CollectionDataTest.main(null);
         CollectionMethods.main(null);
@@ -563,22 +563,25 @@ public class LearnJava {
         FillingLists.main(null);
         IndividualTest.main(null);
         LinkedHashMapDemo.main(null);
-        // ListPerformance.main(null);
+        ListPerformance.main(null);
         Lists.main(null);
         ListSortSearch.main(null);
         MapDataTest.main(null);
-        // MapPerformance.main(null);
+        MapPerformance.main(null);
         Maps.main(null);
         QueueBehavior.main(null);
         ReadOnly.main(null);
-        // References.main(null);
-        // SetPerformance.main(null);
+        References.main(null);
+        SetPerformance.main(null);
         SimpleHashMap.main(null);
         SlowMap.main(null);
         SortedMapDemo.main(null);
         SortedSetDemo.main(null);
-        // SpringDetector.main(null);
-        // SpringDetector2.main(null);
+        try {
+            SpringDetector.main(null);
+            SpringDetector2.main(null);
+        } catch (Exception e) {
+        }
         Stacks.main(null);
         StringHashCode.main(null);
         Synchronization.main(null);

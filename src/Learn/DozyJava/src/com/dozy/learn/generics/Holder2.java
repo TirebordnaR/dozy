@@ -16,6 +16,7 @@ public class Holder2 {
         return a;
     }
 
+    @SuppressWarnings("unused")
     public static void main(String[] args) {
         Holder2 h2 = new Holder2(new Automobile());
         Automobile a = (Automobile) h2.get();

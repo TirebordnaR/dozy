@@ -5,6 +5,7 @@ package com.dozy.learn.containers;
 import java.util.*;
 
 public class Synchronization {
+    @SuppressWarnings("unused")
     public static void main(String[] args) {
         Collection<String> c = Collections
                 .synchronizedCollection(new ArrayList<String>());
