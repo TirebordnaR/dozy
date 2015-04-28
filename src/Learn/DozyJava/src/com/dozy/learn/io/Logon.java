@@ -22,17 +22,18 @@ public class Logon implements Serializable {
                 + "\n   password: " + password;
     }
 
+    @SuppressWarnings("resource")
     public static void main(String[] args) throws Exception {
         Logon a = new Logon("Hulk", "myLittlePony");
         print("logon a = " + a);
         ObjectOutputStream o = new ObjectOutputStream(new FileOutputStream(
-                "Logon.out"));
+                "bin\\Logon.out"));
         o.writeObject(a);
         o.close();
         TimeUnit.SECONDS.sleep(1); // Delay
         // Now get them back:
         ObjectInputStream in = new ObjectInputStream(new FileInputStream(
-                "Logon.out"));
+                "bin\\Logon.out"));
         print("Recovering object at " + new Date());
         a = (Logon) in.readObject();
         print("logon a = " + a);

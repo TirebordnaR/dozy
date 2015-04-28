@@ -10,6 +10,7 @@ import java.io.*;
 public class BufferToText {
     private static final int BSIZE = 1024;
 
+    @SuppressWarnings("resource")
     public static void main(String[] args) throws Exception {
         FileChannel fc = new FileOutputStream("src\\com\\dozy\\learn\\io\\data2.txt").getChannel();
         fc.write(ByteBuffer.wrap("Some text".getBytes()));

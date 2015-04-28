@@ -7,6 +7,7 @@ import java.util.*;
 import static net.mindview.util.Print.*;
 
 public class AvailableCharSets {
+    @SuppressWarnings("rawtypes")
     public static void main(String[] args) {
         SortedMap<String, Charset> charSets = Charset.availableCharsets();
         Iterator<String> it = charSets.keySet().iterator();

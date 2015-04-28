@@ -4,7 +4,7 @@ package com.dozy.learn.io;
 import java.io.*;
 
 public class UsingRandomAccessFile {
-    static String file = "rtest.dat";
+    static String file = "bin\\rtest.dat";
 
     static void display() throws IOException {
         RandomAccessFile rf = new RandomAccessFile(file, "r");

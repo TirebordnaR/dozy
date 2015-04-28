@@ -4,16 +4,17 @@ package com.dozy.learn.io;
 import java.io.*;
 
 public class StoringAndRecoveringData {
+    @SuppressWarnings("resource")
     public static void main(String[] args) throws IOException {
         DataOutputStream out = new DataOutputStream(new BufferedOutputStream(
-                new FileOutputStream("Data.txt")));
+                new FileOutputStream("bin\\Data.txt")));
         out.writeDouble(3.14159);
         out.writeUTF("That was pi");
         out.writeDouble(1.41413);
         out.writeUTF("Square root of 2");
         out.close();
         DataInputStream in = new DataInputStream(new BufferedInputStream(
-                new FileInputStream("Data.txt")));
+                new FileInputStream("bin\\Data.txt")));
         System.out.println(in.readDouble());
         // Only readUTF() will recover the
         // Java-UTF String properly:

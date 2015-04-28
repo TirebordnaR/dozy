@@ -1,5 +1,6 @@
 package com.dozy.learn;
 
+import static net.mindview.util.Print.*;
 import com.dozy.learn.object.*;
 import com.dozy.learn.operators.*;
 import com.dozy.learn.control.*;
@@ -42,7 +43,7 @@ public class LearnJava {
     public static void main(String[] args) {
         System.out.println("Hey java, you're good. 才怪咧！");
 
-        int i = 16;
+        int i = 17;
         switch (i) {
         case 1:
             dozyObject();
@@ -592,46 +593,50 @@ public class LearnJava {
     }
 
     private static void dozyIo() {
-        AvailableCharSets.main(null);
-        // BasicFileOutput.main(null);
-        // Blip3.main(null);
-        // Blips.main(null);
-        // BufferedInputFile.main(null);
-        // BufferToText.main(null);
-        ChangeSystemOut.main(null);
-        // ChannelCopy.main(null);
-        DirectoryDemo.main(null);
-        // DirList.main(null);
-        // DirList2.main(null);
-        // DirList3.main(null);
-        Endians.main(null);
-        // FileLocking.main(null);
-        // FileOutputShortcut.main(null);
-        // FormattedMemoryInput.main(null);
-        // FreezeAlien.main(null);
-        // GetChannel.main(null);
-        GetData.main(null);
-        // GZIPcompress.main(null);
-        IntBufferDemo.main(null);
-        // Logon.main(null);
-        // MakeDirectories.main(null);
-        MappedIO.main(null);
-        // MemoryInput.main(null);
-        // MyWorld.main(null);
-        // OSExecuteDemo.main(null);
-        // PreferencesDemo.main(null);
-        // RecoverCADState.main(null);
-        // Redirecting.main(null);
-        // SerialCtl.main(null);
-        // StoreCADState.main(null);
-        // StoringAndRecoveringData.main(null);
-        // TestEOF.main(null);
-        // TransferTo.main(null);
-        UsingBuffers.main(null);
-        // UsingRandomAccessFile.main(null);
-        ViewBuffers.main(null);
-        // Worm.main(null);
-        // ZipCompress.main(null);
+        try {
+            AvailableCharSets.main(null);
+            BasicFileOutput.main(null);
+            Blip3.main(null);
+            Blips.main(null);
+            BufferedInputFile.main(null);
+            BufferToText.main(null);
+            ChangeSystemOut.main(null);
+            ChannelCopy.main(null);
+            DirectoryDemo.main(null);
+            DirList.main(null);
+            DirList2.main(null);
+            DirList3.main(null);
+            Endians.main(null);
+            FileLocking.main(null);
+            FileOutputShortcut.main(null);
+            FormattedMemoryInput.main(null);
+            FreezeAlien.main(null);
+            GetChannel.main(null);
+            GetData.main(null);
+            GZIPcompress.main(null);
+            IntBufferDemo.main(null);
+            Logon.main(null);
+            //MakeDirectories.main(null);
+            MappedIO.main(null);
+            MemoryInput.main(null);
+            MyWorld.main(null);
+            OSExecuteDemo.main(null);
+            PreferencesDemo.main(null);
+            Redirecting.main(null);
+            SerialCtl.main(null);
+            StoreCADState.main(null);
+            RecoverCADState.main(null);
+            StoringAndRecoveringData.main(null);
+            TestEOF.main(null);
+            TransferTo.main(null);
+            UsingBuffers.main(null);
+            UsingRandomAccessFile.main(null);
+            ViewBuffers.main(null);
+            Worm.main(null);
+            ZipCompress.main(null);
+        } catch (Exception e) {
+            e.printStackTrace(System.out);
+        }
     }
 
     private static void dozyEnumerated() {

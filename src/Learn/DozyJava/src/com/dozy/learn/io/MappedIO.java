@@ -41,6 +41,7 @@ public class MappedIO {
             dos.close();
         }
     }, new Tester("Mapped Write") {
+        @SuppressWarnings("resource")
         public void test() throws IOException {
             FileChannel fc = new RandomAccessFile("bin\\temp.tmp", "rw")
                     .getChannel();
@@ -59,6 +60,7 @@ public class MappedIO {
             dis.close();
         }
     }, new Tester("Mapped Read") {
+        @SuppressWarnings("resource")
         public void test() throws IOException {
             FileChannel fc = new FileInputStream(new File("bin\\temp.tmp"))
                     .getChannel();
@@ -80,6 +82,7 @@ public class MappedIO {
             raf.close();
         }
     }, new Tester("Mapped Read/Write") {
+        @SuppressWarnings("resource")
         public void test() throws IOException {
             FileChannel fc = new RandomAccessFile(new File("bin\\temp.tmp"), "rw")
                     .getChannel();

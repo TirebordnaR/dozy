@@ -6,8 +6,10 @@ interface FactoryI<T> {
 }
 
 class Foo2<T> {
+    @SuppressWarnings("unused")
     private T x;
 
+    @SuppressWarnings("hiding")
     public <F extends FactoryI<T>> Foo2(F factory) {
         x = factory.create();
     }

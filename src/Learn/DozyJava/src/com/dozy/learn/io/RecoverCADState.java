@@ -7,10 +7,10 @@ import java.io.*;
 import java.util.*;
 
 public class RecoverCADState {
-    @SuppressWarnings("unchecked")
+    @SuppressWarnings({ "unchecked", "unused" })
     public static void main(String[] args) throws Exception {
         ObjectInputStream in = new ObjectInputStream(new FileInputStream(
-                "CADState.out"));
+                "bin\\CADState.out"));
         // Read in the same order they were written:
         List<Class<? extends Shape>> shapeTypes = (List<Class<? extends Shape>>) in
                 .readObject();

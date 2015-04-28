@@ -7,7 +7,7 @@ import java.io.*;
 
 public class FileLocking {
     public static void main(String[] args) throws Exception {
-        FileOutputStream fos = new FileOutputStream("file.txt");
+        FileOutputStream fos = new FileOutputStream("bin\\file.txt");
         FileLock fl = fos.getChannel().tryLock();
         if (fl != null) {
             System.out.println("Locked File");

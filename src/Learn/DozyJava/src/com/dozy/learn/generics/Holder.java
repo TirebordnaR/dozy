@@ -23,6 +23,7 @@ public class Holder<T> {
         return value.equals(obj);
     }
 
+    @SuppressWarnings("unused")
     public static void main(String[] args) {
         Holder<Apple> Apple = new Holder<Apple>(new Apple());
         Apple d = Apple.get();

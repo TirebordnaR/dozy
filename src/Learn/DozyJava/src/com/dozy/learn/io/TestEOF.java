@@ -5,6 +5,7 @@ package com.dozy.learn.io;
 import java.io.*;
 
 public class TestEOF {
+    @SuppressWarnings("resource")
     public static void main(String[] args) throws IOException {
         DataInputStream in = new DataInputStream(new BufferedInputStream(
                 new FileInputStream("src\\com\\dozy\\learn\\io\\TestEOF.java")));

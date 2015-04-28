@@ -23,6 +23,7 @@ class Animal implements Serializable {
 }
 
 public class MyWorld {
+    @SuppressWarnings("rawtypes")
     public static void main(String[] args) throws IOException,
             ClassNotFoundException {
         House house = new House();

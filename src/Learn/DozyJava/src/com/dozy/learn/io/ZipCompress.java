@@ -10,14 +10,16 @@ import java.util.*;
 import static net.mindview.util.Print.*;
 
 public class ZipCompress {
+    @SuppressWarnings({ "resource", "rawtypes" })
     public static void main(String[] args) throws IOException {
-        FileOutputStream f = new FileOutputStream("test.zip");
+        FileOutputStream f = new FileOutputStream("bin\\test.zip");
         CheckedOutputStream csum = new CheckedOutputStream(f, new Adler32());
         ZipOutputStream zos = new ZipOutputStream(csum);
         BufferedOutputStream out = new BufferedOutputStream(zos);
         zos.setComment("A test of Java Zipping");
         // No corresponding getComment(), though.
-        for (String arg : args) {
+        String[] argx = { "src\\com\\dozy\\learn\\io\\ZipCompress.java" };
+        for (String arg : argx) {
             print("Writing file " + arg);
             BufferedReader in = new BufferedReader(new FileReader(arg));
             zos.putNextEntry(new ZipEntry(arg));
@@ -32,7 +34,7 @@ public class ZipCompress {
         print("Checksum: " + csum.getChecksum().getValue());
         // Now extract the files:
         print("Reading file");
-        FileInputStream fi = new FileInputStream("test.zip");
+        FileInputStream fi = new FileInputStream("bin\\test.zip");
         CheckedInputStream csumi = new CheckedInputStream(fi, new Adler32());
         ZipInputStream in2 = new ZipInputStream(csumi);
         BufferedInputStream bis = new BufferedInputStream(in2);
@@ -43,11 +45,11 @@ public class ZipCompress {
             while ((x = bis.read()) != -1)
                 System.out.write(x);
         }
-        if (args.length == 1)
+        if (argx.length == 1)
             print("Checksum: " + csumi.getChecksum().getValue());
         bis.close();
         // Alternative way to open and read Zip files:
-        ZipFile zf = new ZipFile("test.zip");
+        ZipFile zf = new ZipFile("bin\\test.zip");
         Enumeration e = zf.entries();
         while (e.hasMoreElements()) {
             ZipEntry ze2 = (ZipEntry) e.nextElement();

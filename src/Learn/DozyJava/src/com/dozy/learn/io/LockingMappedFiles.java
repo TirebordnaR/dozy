@@ -11,6 +11,7 @@ public class LockingMappedFiles {
     static final int LENGTH = 0x8FFFFFF; // 128 MB
     static FileChannel fc;
 
+    @SuppressWarnings("resource")
     public static void main(String[] args) throws Exception {
         fc = new RandomAccessFile("test.dat", "rw").getChannel();
         MappedByteBuffer out = fc

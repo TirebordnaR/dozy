@@ -10,7 +10,7 @@ public class Redirecting {
         BufferedInputStream in = new BufferedInputStream(new FileInputStream(
                 "src\\com\\dozy\\learn\\io\\Redirecting.java"));
         PrintStream out = new PrintStream(new BufferedOutputStream(
-                new FileOutputStream("test.out")));
+                new FileOutputStream("bin\\test.out")));
         System.setIn(in);
         System.setOut(out);
         System.setErr(out);

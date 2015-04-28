@@ -4,7 +4,7 @@ package com.dozy.learn.io;
 import java.io.*;
 
 public class FileOutputShortcut {
-    static String file = "FileOutputShortcut.out";
+    static String file = "bin\\FileOutputShortcut.out";
 
     public static void main(String[] args) throws IOException {
         BufferedReader in = new BufferedReader(new StringReader(

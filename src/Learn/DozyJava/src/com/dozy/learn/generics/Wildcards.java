@@ -4,7 +4,8 @@ package com.dozy.learn.generics;
 
 public class Wildcards {
    // Raw argument:
-  static void rawArgs(Holder holder, Object arg) {
+  @SuppressWarnings({ "unused", "rawtypes" })
+static void rawArgs(Holder holder, Object arg) {
     // holder.set(arg); // Warning:
     //   Unchecked call to set(T) as a
     //   member of the raw type Holder
@@ -17,7 +18,8 @@ public class Wildcards {
     Object obj = holder.get();
   }	
   // Similar to rawArgs(), but errors instead of warnings:
-  static void unboundedArg(Holder<?> holder, Object arg) {
+  @SuppressWarnings("unused")
+static void unboundedArg(Holder<?> holder, Object arg) {
     // holder.set(arg); // Error:
     //   set(capture of ?) in Holder<capture of ?>
     //   cannot be applied to (Object)

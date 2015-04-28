@@ -2,6 +2,7 @@
 package com.dozy.learn.typeinfo;
 
 public class GenericClassReferences {
+    @SuppressWarnings({ "unused", "rawtypes" })
     public static void main(String[] args) {
         Class intClass = int.class;
         Class<Integer> genericIntClass = int.class;
