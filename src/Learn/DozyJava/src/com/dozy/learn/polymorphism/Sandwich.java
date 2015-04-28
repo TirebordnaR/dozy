@@ -41,8 +41,11 @@ class PortableLunch extends Lunch {
 }
 
 public class Sandwich extends PortableLunch {
+    @SuppressWarnings("unused")
     private Bread b = new Bread();
+    @SuppressWarnings("unused")
     private Cheese c = new Cheese();
+    @SuppressWarnings("unused")
     private Lettuce l = new Lettuce();
 
     public Sandwich() {

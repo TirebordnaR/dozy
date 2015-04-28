@@ -20,6 +20,7 @@ public class AdaptedRandomDoubles extends RandomDoubles implements Readable {
         return result.length();
     }
 
+    @SuppressWarnings("resource")
     public static void main(String[] args) {
         Scanner s = new Scanner(new AdaptedRandomDoubles(7));
         while (s.hasNextDouble())

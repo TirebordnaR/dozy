@@ -11,6 +11,7 @@ class A {
         }
     }
 
+    @SuppressWarnings("unused")
     private class BImp2 implements B {
         public void f() {
         }
@@ -25,6 +26,7 @@ class A {
         }
     }
 
+    @SuppressWarnings("unused")
     private class CImp2 implements C {
         public void f() {
         }
@@ -34,6 +36,7 @@ class A {
         void f();
     }
 
+    @SuppressWarnings("unused")
     private class DImp implements D {
         public void f() {
         }

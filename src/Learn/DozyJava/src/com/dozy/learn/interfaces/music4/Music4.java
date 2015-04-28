@@ -6,6 +6,7 @@ import com.dozy.learn.polymorphism.music.Note;
 import static net.mindview.util.Print.*;
 
 abstract class Instrument {
+    @SuppressWarnings("unused")
     private int i; // Storage allocated for each
 
     public abstract void play(Note n);

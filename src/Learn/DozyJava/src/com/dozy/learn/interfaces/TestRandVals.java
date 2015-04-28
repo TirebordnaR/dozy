@@ -11,5 +11,9 @@ public class TestRandVals {
         print(RandVals.RANDOM_DOUBLE);
     }
 } /*
-   * Output: 8 -32032247016559954 -8.5939291E18 5.779976127815049
+   * Output: 
+8
+-32032247016559954
+-8.5939291E18
+5.779976127815049
    */// :~
