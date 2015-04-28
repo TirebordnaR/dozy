@@ -9,6 +9,7 @@ public class DotNew {
 
     public static void main(String[] args) {
         DotNew dn = new DotNew();
+        @SuppressWarnings("unused")
         DotNew.Inner dni = dn.new Inner();
     }
 } // /:~

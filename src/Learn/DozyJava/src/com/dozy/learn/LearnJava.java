@@ -42,7 +42,7 @@ public class LearnJava {
     public static void main(String[] args) {
         System.out.println("Hey java, you're good. 才怪咧！");
 
-        int i = 19;
+        int i = 9;
         switch (i) {
         case 1:
             dozyObject();
@@ -261,12 +261,12 @@ public class LearnJava {
         BigEgg.main(null);
         BigEgg2.main(null);
         Callbacks.main(null);
-        // ClassInInterface.main(null);
+        ClassInInterface.Test.main(null);
         DotNew.main(null);
         DotThis.main(null);
         Factories.main(null);
         Games.main(null);
-        // GreenhouseController.main(null);
+        GreenhouseController.main(null);
         InheritInner.main(null);
         LocalInnerClass.main(null);
         MultiImplementation.main(null);

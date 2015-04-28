@@ -14,6 +14,7 @@ public class Parcel7 {
         }; // Semicolon required in this case
     }
 
+    @SuppressWarnings("unused")
     public static void main(String[] args) {
         Parcel7 p = new Parcel7();
         Contents c = p.contents();

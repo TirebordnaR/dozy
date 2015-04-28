@@ -45,6 +45,7 @@ public class Parcel11 {
         return new ParcelContents();
     }
 
+    @SuppressWarnings("unused")
     public static void main(String[] args) {
         Contents c = contents();
         Destination d = destination("Tasmania");

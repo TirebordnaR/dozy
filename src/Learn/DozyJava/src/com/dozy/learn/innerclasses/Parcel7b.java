@@ -16,6 +16,7 @@ public class Parcel7b {
         return new MyContents();
     }
 
+    @SuppressWarnings("unused")
     public static void main(String[] args) {
         Parcel7b p = new Parcel7b();
         Contents c = p.contents();

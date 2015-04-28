@@ -27,6 +27,7 @@ public class Parcel1 {
     // Using inner classes looks just like
     // using any other class, within Parcel1:
     public void ship(String dest) {
+        @SuppressWarnings("unused")
         Contents c = new Contents();
         Destination d = new Destination(dest);
         System.out.println(d.readLabel());

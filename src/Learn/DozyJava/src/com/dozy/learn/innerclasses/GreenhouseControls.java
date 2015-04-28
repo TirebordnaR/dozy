@@ -8,6 +8,7 @@ package com.dozy.learn.innerclasses;
 import com.dozy.learn.innerclasses.controller.*;
 
 public class GreenhouseControls extends Controller {
+    @SuppressWarnings("unused")
     private boolean light = false;
 
     public class LightOn extends Event {
@@ -42,6 +43,7 @@ public class GreenhouseControls extends Controller {
         }
     }
 
+    @SuppressWarnings("unused")
     private boolean water = false;
 
     public class WaterOn extends Event {
@@ -74,6 +76,7 @@ public class GreenhouseControls extends Controller {
         }
     }
 
+    @SuppressWarnings("unused")
     private String thermostat = "Day";
 
     public class ThermostatNight extends Event {

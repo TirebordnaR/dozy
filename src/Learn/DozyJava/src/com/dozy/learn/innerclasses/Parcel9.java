@@ -17,6 +17,7 @@ public class Parcel9 {
         };
     }
 
+    @SuppressWarnings("unused")
     public static void main(String[] args) {
         Parcel9 p = new Parcel9();
         Destination d = p.destination("Tasmania");

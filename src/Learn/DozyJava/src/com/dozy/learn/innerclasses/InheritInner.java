@@ -16,6 +16,7 @@ public class InheritInner extends WithInner.Inner {
 
     public static void main(String[] args) {
         WithInner wi = new WithInner();
+        @SuppressWarnings("unused")
         InheritInner ii = new InheritInner(wi);
     }
 } // /:~

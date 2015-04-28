@@ -24,6 +24,7 @@ public class Parcel3 {
         }
     }
 
+    @SuppressWarnings("unused")
     public static void main(String[] args) {
         Parcel3 p = new Parcel3();
         // Must use instance of outer class

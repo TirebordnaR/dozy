@@ -33,11 +33,13 @@ public class Parcel2 {
     }
 
     public void ship(String dest) {
+        @SuppressWarnings("unused")
         Contents c = contents();
         Destination d = to(dest);
         System.out.println(d.readLabel());
     }
 
+    @SuppressWarnings("unused")
     public static void main(String[] args) {
         Parcel2 p = new Parcel2();
         p.ship("Tasmania");

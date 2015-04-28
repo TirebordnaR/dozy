@@ -24,6 +24,7 @@ public class Parcel10 {
 
     public static void main(String[] args) {
         Parcel10 p = new Parcel10();
+        @SuppressWarnings("unused")
         Destination d = p.destination("Tasmania", 101.395F);
     }
 } /*

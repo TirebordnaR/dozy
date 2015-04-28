@@ -4,6 +4,7 @@ package com.dozy.learn.innerclasses;
 // Nesting a class within a scope.
 
 public class Parcel6 {
+    @SuppressWarnings("unused")
     private void internalTracking(boolean b) {
         if (b) {
             class TrackingSlip {
