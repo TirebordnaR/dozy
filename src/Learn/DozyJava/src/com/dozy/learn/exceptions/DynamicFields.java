@@ -99,6 +99,7 @@ public class DynamicFields {
             df.setField("number3", 11);
             print("df: " + df);
             print("df.getField(\"d\") : " + df.getField("d"));
+            @SuppressWarnings("unused")
             Object field = df.setField("d", null); // Exception
         } catch (NoSuchFieldException e) {
             e.printStackTrace(System.out);

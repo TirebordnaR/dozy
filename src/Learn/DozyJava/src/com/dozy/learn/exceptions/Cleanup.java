@@ -4,6 +4,7 @@ package com.dozy.learn.exceptions;
 // Guaranteeing proper cleanup of a resource.
 
 public class Cleanup {
+    @SuppressWarnings("unused")
     public static void main(String[] args) {
         try {
             InputFile in = new InputFile("src\\com\\dozy\\learn\\exceptions\\Cleanup.java");

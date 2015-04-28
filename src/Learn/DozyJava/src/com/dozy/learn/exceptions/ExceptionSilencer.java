@@ -2,6 +2,7 @@
 package com.dozy.learn.exceptions;
 
 public class ExceptionSilencer {
+    @SuppressWarnings("finally")
     public static void main(String[] args) {
         try {
             throw new RuntimeException();

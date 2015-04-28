@@ -42,7 +42,7 @@ public class LearnJava {
     public static void main(String[] args) {
         System.out.println("Hey java, you're good. 才怪咧！");
 
-        int i = 9;
+        int i = 11;
         switch (i) {
         case 1:
             dozyObject();
@@ -341,9 +341,17 @@ public class LearnJava {
         LoggingExceptions.main(null);
         LoggingExceptions2.main(null);
         LostMessage.main(null);
-        // MainException.main(null);
+        try {
+            MainException.main(null);
+        } catch (Exception e) {
+            System.out.println("MainException");
+        }
         MultipleReturns.main(null);
-        // NeverCaught.main(null);
+        try {
+            NeverCaught.main(null);
+        } catch (Exception e) {
+            System.out.println("NeverCaught");
+        }
         OnOffSwitch.main(null);
         Rethrowing.main(null);
         RethrowNew.main(null);
