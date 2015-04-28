@@ -30,6 +30,7 @@ class FancyToy extends Toy implements HasBatteries, Waterproof, Shoots {
 }
 
 public class ToyTest {
+    @SuppressWarnings("rawtypes")
     static void printInfo(Class cc) {
         print("Class name: " + cc.getName() + " is interface? ["
                 + cc.isInterface() + "]");
@@ -37,6 +38,7 @@ public class ToyTest {
         print("Canonical name : " + cc.getCanonicalName());
     }
 
+    @SuppressWarnings("rawtypes")
     public static void main(String[] args) {
         Class c = null;
         try {

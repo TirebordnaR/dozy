@@ -28,6 +28,7 @@ class Initable3 {
 public class ClassInitialization {
     public static Random rand = new Random(47);
 
+    @SuppressWarnings({ "rawtypes", "unused" })
     public static void main(String[] args) throws Exception {
         Class initable = Initable.class;
         System.out.println("After creating Initable ref");
@@ -37,7 +38,7 @@ public class ClassInitialization {
         System.out.println(Initable.staticFinal2);
         // Does trigger initialization:
         System.out.println(Initable2.staticNonFinal);
-        Class initable3 = Class.forName("Initable3");
+        Class initable3 = Class.forName("com.dozy.learn.typeinfo.Initable3");
         System.out.println("After creating Initable3 ref");
         System.out.println(Initable3.staticNonFinal);
     }

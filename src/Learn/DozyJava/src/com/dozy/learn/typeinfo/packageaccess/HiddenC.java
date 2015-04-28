@@ -21,6 +21,7 @@ class C implements A {
         print("protected C.v()");
     }
 
+    @SuppressWarnings("unused")
     private void w() {
         print("private C.w()");
     }

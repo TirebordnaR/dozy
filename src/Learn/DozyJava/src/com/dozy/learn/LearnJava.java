@@ -42,7 +42,7 @@ public class LearnJava {
     public static void main(String[] args) {
         System.out.println("Hey java, you're good. 才怪咧！");
 
-        int i = 12;
+        int i = 13;
         switch (i) {
         case 1:
             dozyObject();
@@ -404,17 +404,26 @@ public class LearnJava {
     }
 
     private static void dozyTypeinfo() {
-        // AnonymousImplementation.main(null);
+        try {
+            AnonymousImplementation.main(null);
+        } catch (Exception e) {
+        }
         BoundedClassReferences.main(null);
         ClassCasts.main(null);
-        // ClassInitialization.main(null);
+        try {
+            ClassInitialization.main(null);
+        } catch (Exception e) {
+        }
         FamilyVsExactType.main(null);
         FilledList.main(null);
         GenericClassReferences.main(null);
-        // HiddenImplementation.main(null);
-        // InnerImplementation.main(null);
+        try {
+            HiddenImplementation.main(null);
+            InnerImplementation.main(null);
+            ModifyingPrivateFields.main(null);
+        } catch (Exception e) {
+        }
         InterfaceViolation.main(null);
-        // ModifyingPrivateFields.main(null);
         NullRobot.main(null);
         PetCount.main(null);
         PetCount2.main(null);
@@ -423,7 +432,7 @@ public class LearnJava {
         RegisteredFactories.main(null);
         SelectingMethods.main(null);
         com.dozy.learn.typeinfo.Shapes.main(null);
-        // ShowMethods.main(null);
+        ShowMethods.main(null);
         SimpleDynamicProxy.main(null);
         SimpleProxyDemo.main(null);
         SnowRemovalRobot.main(null);
@@ -431,7 +440,10 @@ public class LearnJava {
         SweetShop.main(null);
         WildcardClassReferences.main(null);
         LiteralPetCreator.main(null);
-        // GenericToyTest.main(null);
+        try {
+            GenericToyTest.main(null);
+        } catch (Exception e) {
+        }
         ToyTest.main(null);
     }
 

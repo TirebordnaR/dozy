@@ -11,18 +11,22 @@ class AnonymousA {
                 print("public C.f()");
             }
 
+            @SuppressWarnings("unused")
             public void g() {
                 print("public C.g()");
             }
 
+            @SuppressWarnings("unused")
             void u() {
                 print("package C.u()");
             }
 
+            @SuppressWarnings("unused")
             protected void v() {
                 print("protected C.v()");
             }
 
+            @SuppressWarnings("unused")
             private void w() {
                 print("private C.w()");
             }

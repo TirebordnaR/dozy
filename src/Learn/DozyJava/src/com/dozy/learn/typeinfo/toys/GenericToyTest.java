@@ -3,6 +3,7 @@
 package com.dozy.learn.typeinfo.toys;
 
 public class GenericToyTest {
+    @SuppressWarnings("unused")
     public static void main(String[] args) throws Exception {
         Class<FancyToy> ftClass = FancyToy.class;
         // Produces exact type:
