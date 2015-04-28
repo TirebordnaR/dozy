@@ -42,11 +42,16 @@ public class SerialNumberChecker {
 
     static class SerialChecker implements Runnable {
         public void run() {
+            int i = 0;
             while (true) {
                 int serial = SerialNumberGenerator.nextSerialNumber();
                 if (serials.contains(serial)) {
                     System.out.println("Duplicate: " + serial);
-                    System.exit(0);
+                    break;
+                    // System.exit(0);
+                }
+                if (++i > 1000) {
+                    break;
                 }
                 serials.add(serial);
             }
@@ -54,14 +59,16 @@ public class SerialNumberChecker {
     }
 
     public static void main(String[] args) throws Exception {
-        for (int i = 0; i < SIZE; i++)
+        for (int i = 0; i < SIZE; i++) {
             exec.execute(new SerialChecker());
+        }
         // Stop after n seconds if there's an argument:
-        //if (args.length > 0) {
-            TimeUnit.MILLISECONDS.sleep(new Integer(200));
-            System.out.println("No duplicates detected");
-            //System.exit(0);
-        //}
+        // if (args.length > 0) {
+        TimeUnit.MILLISECONDS.sleep(new Integer(200));
+        System.out.println("No duplicates detected");
+        // System.exit(0);
+        // }
+        exec.shutdown();
     }
 } /*
    * Output: (Sample) Duplicate: 8468656

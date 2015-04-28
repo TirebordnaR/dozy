@@ -6,7 +6,7 @@ import java.util.concurrent.atomic.*;
 
 public class AtomicIntegerTest implements Runnable {
     private AtomicInteger i = new AtomicInteger(0);
-    private boolean cancel = false;
+    private volatile boolean cancel = false;
 
     public boolean isCancel() {
         return cancel;

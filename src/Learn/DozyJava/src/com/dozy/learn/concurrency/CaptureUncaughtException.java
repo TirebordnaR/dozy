@@ -15,6 +15,7 @@ class ExceptionThread2 implements Runnable {
 class MyUncaughtExceptionHandler implements Thread.UncaughtExceptionHandler {
     public void uncaughtException(Thread t, Throwable e) {
         System.out.println("caught " + e);
+        t.interrupt();
     }
 }
 
@@ -34,6 +35,7 @@ public class CaptureUncaughtException {
         ExecutorService exec = Executors
                 .newCachedThreadPool(new HandlerThreadFactory());
         exec.execute(new ExceptionThread2());
+        exec.shutdown();
     }
 } /* Output: (90% match)
 HandlerThreadFactory@de6ced creating new Thread

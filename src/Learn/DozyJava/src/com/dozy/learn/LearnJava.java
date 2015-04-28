@@ -707,7 +707,7 @@ public class LearnJava {
             Joining.main(null);
             ListComparisons.main(null);
             MainThread.main(null);
-            MapComparisons.main(null);
+            //MapComparisons.main(null);
             MoreBasicThreads.main(null);
             MultiLock.main(null);
             //NaiveExceptionHandling.main(null);

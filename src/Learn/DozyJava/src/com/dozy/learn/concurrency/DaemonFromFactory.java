@@ -26,5 +26,6 @@ public class DaemonFromFactory implements Runnable {
             exec.execute(new DaemonFromFactory());
         print("All daemons started");
         TimeUnit.MILLISECONDS.sleep(200); // Run for a while
+        exec.shutdownNow();
     }
 } /* (Execute to see output) */// :~

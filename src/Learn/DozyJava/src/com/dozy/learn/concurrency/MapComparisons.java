@@ -40,10 +40,16 @@ abstract class MapTest extends Tester<Map<Integer, Integer>> {
     }
 
     void startReadersAndWriters() {
-        for (int i = 0; i < nReaders; i++)
-            exec.execute(new Reader());
-        for (int i = 0; i < nWriters; i++)
-            exec.execute(new Writer());
+        for (int i = 0; i < nReaders; i++) {
+            if (!exec.isShutdown()) {
+                exec.execute(new Reader());
+            }
+        }
+        for (int i = 0; i < nWriters; i++) {
+            if (!exec.isShutdown()) {
+                exec.execute(new Writer());
+            }
+        }
     }
 }
 
